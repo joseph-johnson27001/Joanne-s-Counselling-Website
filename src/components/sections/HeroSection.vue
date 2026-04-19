@@ -4,7 +4,7 @@
       <p class="eyebrow">
         Healing is play, listening is art, the rest is connection.
       </p>
-      <h1>Welcome to Joanne Barnuevo Counselling</h1>
+      <h1>Welcome to Joanne Counselling</h1>
       <p class="hero-text">
         Person-centered support for children, adolescents, and adults in Bangkok
         and online. Every healing journey is unique. Whether you or your child

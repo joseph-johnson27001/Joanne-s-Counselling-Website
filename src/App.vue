@@ -41,7 +41,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Playfair Display", serif;
 }
 
 a {
