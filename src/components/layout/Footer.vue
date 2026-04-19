@@ -5,7 +5,12 @@
       <p>Supporting children, adolescents, and adults in Bangkok and online.</p>
     </div>
     <div>
-      <p>Email: <a href="mailto:joanneb.counselling@gmail.com">joanneb.counselling@gmail.com</a></p>
+      <p>
+        Email:
+        <a href="mailto:joanneb.counselling@gmail.com"
+          >joanneb.counselling@gmail.com</a
+        >
+      </p>
       <p>© 2026 Joanne Barnuevo</p>
     </div>
   </footer>
@@ -13,8 +18,8 @@
 
 <script>
 export default {
-  name: 'Footer',
-}
+  name: "Footer",
+};
 </script>
 
 <style scoped>

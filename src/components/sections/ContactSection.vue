@@ -4,7 +4,9 @@
       <p class="eyebrow">Contact</p>
       <h2>Ready to connect?</h2>
       <p class="subtitle">
-        Booking is simple. Send a message to joanneb.counselling@gmail.com with a brief introduction and what you’d like to share in counseling. I’ll respond with next steps and available times.
+        Booking is simple. Send a message to joanneb.counselling@gmail.com with
+        a brief introduction and what you’d like to share in counseling. I’ll
+        respond with next steps and available times.
       </p>
     </div>
 
@@ -28,7 +30,11 @@
         <p>English and Tagalog</p>
       </div>
 
-      <div class="contact-card image-placeholder-card" role="img" aria-label="Illustration placeholder for contacting Joanne">
+      <div
+        class="contact-card image-placeholder-card"
+        role="img"
+        aria-label="Illustration placeholder for contacting Joanne"
+      >
         <span>Contact image placeholder</span>
       </div>
     </div>
@@ -37,8 +43,8 @@
 
 <script>
 export default {
-  name: 'ContactSection',
-}
+  name: "ContactSection",
+};
 </script>
 
 <style scoped>

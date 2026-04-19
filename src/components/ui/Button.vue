@@ -1,5 +1,11 @@
 <template>
-  <a v-if="href" :href="href" class="button" :target="external ? '_blank' : '_self'" rel="noopener noreferrer">
+  <a
+    v-if="href"
+    :href="href"
+    class="button"
+    :target="external ? '_blank' : '_self'"
+    rel="noopener noreferrer"
+  >
     <slot />
   </a>
   <button v-else type="button" class="button">
@@ -9,18 +15,18 @@
 
 <script>
 export default {
-  name: 'Button',
+  name: "Button",
   props: {
     href: {
       type: String,
-      default: '',
+      default: "",
     },
     external: {
       type: Boolean,
       default: false,
     },
   },
-}
+};
 </script>
 
 <style scoped>
@@ -36,7 +42,9 @@ export default {
   color: white;
   font-weight: 600;
   text-decoration: none;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .button:hover {

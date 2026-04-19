@@ -4,22 +4,31 @@
       <p class="eyebrow">Services</p>
       <h2>Healing is play. Listening is art. The rest is connection.</h2>
       <p class="subtitle">
-        I offer counseling for children, adolescents, and adults with a person-centered, integrative approach.
+        I offer counseling for children, adolescents, and adults with a
+        person-centered, integrative approach.
       </p>
     </div>
 
     <div class="service-grid">
       <Card>
         <h3>Children (ages 4–18)</h3>
-        <p>Support for school issues, anxiety, emotion regulation, and social skills.</p>
+        <p>
+          Support for school issues, anxiety, emotion regulation, and social
+          skills.
+        </p>
       </Card>
       <Card>
         <h3>Adolescents</h3>
-        <p>Guidance through identity, relationships, stress, and transitions.</p>
+        <p>
+          Guidance through identity, relationships, stress, and transitions.
+        </p>
       </Card>
       <Card>
         <h3>Adults</h3>
-        <p>Individual support for life changes, grief, self-esteem, and expat challenges.</p>
+        <p>
+          Individual support for life changes, grief, self-esteem, and expat
+          challenges.
+        </p>
       </Card>
     </div>
 
@@ -36,10 +45,20 @@
       <div>
         <h4>Areas of specialization</h4>
         <ul>
-          <li>Anxiety, depression, life transitions, relocation, expat issues</li>
-          <li>Emotion regulation, self-esteem, identity development, relationships</li>
-          <li>Grief, stress management, ADHD, autism support, parenting, school concerns</li>
-          <li>Bullying, social skills, mindfulness, cultural adaptation, LGBTQIA+ support</li>
+          <li>
+            Anxiety, depression, life transitions, relocation, expat issues
+          </li>
+          <li>
+            Emotion regulation, self-esteem, identity development, relationships
+          </li>
+          <li>
+            Grief, stress management, ADHD, autism support, parenting, school
+            concerns
+          </li>
+          <li>
+            Bullying, social skills, mindfulness, cultural adaptation, LGBTQIA+
+            support
+          </li>
         </ul>
       </div>
     </div>
@@ -47,14 +66,14 @@
 </template>
 
 <script>
-import Card from '@/components/ui/Card.vue'
+import Card from "@/components/ui/Card.vue";
 
 export default {
-  name: 'ServicesSection',
+  name: "ServicesSection",
   components: {
     Card,
   },
-}
+};
 </script>
 
 <style scoped>

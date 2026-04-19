@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: 'Accordion',
+  name: "Accordion",
   props: {
     title: {
       type: String,
@@ -26,14 +26,14 @@ export default {
   data() {
     return {
       isOpen: this.open,
-    }
+    };
   },
   methods: {
     toggle() {
-      this.isOpen = !this.isOpen
+      this.isOpen = !this.isOpen;
     },
   },
-}
+};
 </script>
 
 <style scoped>

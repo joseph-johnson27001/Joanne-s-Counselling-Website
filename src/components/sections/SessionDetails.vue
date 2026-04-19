@@ -21,11 +21,17 @@
         </div>
         <div class="detail-item">
           <h3>Cancellation</h3>
-          <p>Please notify at least 24 hours in advance to avoid session charges.</p>
+          <p>
+            Please notify at least 24 hours in advance to avoid session charges.
+          </p>
         </div>
       </div>
 
-      <div class="session-visual" role="img" aria-label="Image placeholder for session information and support">
+      <div
+        class="session-visual"
+        role="img"
+        aria-label="Image placeholder for session information and support"
+      >
         <span>Visual placeholder</span>
       </div>
     </div>
@@ -34,8 +40,8 @@
 
 <script>
 export default {
-  name: 'SessionDetails',
-}
+  name: "SessionDetails",
+};
 </script>
 
 <style scoped>

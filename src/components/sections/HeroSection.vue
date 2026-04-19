@@ -1,12 +1,15 @@
 <template>
   <section id="home" class="hero-section">
     <div class="hero-copy">
-      <p class="eyebrow">Healing is play, listening is art, the rest is connection.</p>
+      <p class="eyebrow">
+        Healing is play, listening is art, the rest is connection.
+      </p>
       <h1>Welcome to Joanne Barnuevo Counselling</h1>
       <p class="hero-text">
-        Person-centered support for children, adolescents, and adults in Bangkok and online.
-        Every healing journey is unique. Whether you or your child are navigating change, seeking understanding,
-        or simply needing a safe space, my practice is grounded in playful healing, attentive listening,
+        Person-centered support for children, adolescents, and adults in Bangkok
+        and online. Every healing journey is unique. Whether you or your child
+        are navigating change, seeking understanding, or simply needing a safe
+        space, my practice is grounded in playful healing, attentive listening,
         and meaningful connection.
       </p>
       <div class="hero-actions">
@@ -15,21 +18,25 @@
       </div>
     </div>
 
-    <div class="hero-visual" role="img" aria-label="Illustration placeholder for playful healing and connection">
+    <div
+      class="hero-visual"
+      role="img"
+      aria-label="Illustration placeholder for playful healing and connection"
+    >
       <span>Image placeholder</span>
     </div>
   </section>
 </template>
 
 <script>
-import Button from '@/components/ui/Button.vue'
+import Button from "@/components/ui/Button.vue";
 
 export default {
-  name: 'HeroSection',
+  name: "HeroSection",
   components: {
     Button,
   },
-}
+};
 </script>
 
 <style scoped>

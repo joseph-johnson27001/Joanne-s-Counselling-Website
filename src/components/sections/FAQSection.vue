@@ -7,11 +7,19 @@
 
     <div class="accordion-list">
       <Accordion title="What is your approach to counseling?">
-        <p>My person-centered approach means I create a supportive space where you can share your story at your own pace. Healing often begins with playful exploration, attentive listening, and building trust in our connection.</p>
+        <p>
+          My person-centered approach means I create a supportive space where
+          you can share your story at your own pace. Healing often begins with
+          playful exploration, attentive listening, and building trust in our
+          connection.
+        </p>
       </Accordion>
 
       <Accordion title="How do I book an appointment?">
-        <p>Email me at joanneb.counselling@gmail.com. A simple introduction is all that’s needed.</p>
+        <p>
+          Email me at joanneb.counselling@gmail.com. A simple introduction is
+          all that’s needed.
+        </p>
       </Accordion>
 
       <Accordion title="What age groups do you work with?">
@@ -23,25 +31,31 @@
       </Accordion>
 
       <Accordion title="What is your cancellation policy?">
-        <p>Please notify me at least 24 hours in advance to avoid session charges.</p>
+        <p>
+          Please notify me at least 24 hours in advance to avoid session
+          charges.
+        </p>
       </Accordion>
 
       <Accordion title="Is parental consent required for minors?">
-        <p>Yes, in Thailand, parental or legal guardian consent is required for anyone under 20.</p>
+        <p>
+          Yes, in Thailand, parental or legal guardian consent is required for
+          anyone under 20.
+        </p>
       </Accordion>
     </div>
   </section>
 </template>
 
 <script>
-import Accordion from '@/components/ui/Accordion.vue'
+import Accordion from "@/components/ui/Accordion.vue";
 
 export default {
-  name: 'FAQSection',
+  name: "FAQSection",
   components: {
     Accordion,
   },
-}
+};
 </script>
 
 <style scoped>
