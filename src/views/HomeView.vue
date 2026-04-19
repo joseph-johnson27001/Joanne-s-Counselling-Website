@@ -6,7 +6,6 @@
       <HeroSection />
       <AboutSection />
       <ServicesSection />
-      <SessionDetails />
       <FAQSection />
       <ContactSection />
     </main>
@@ -21,7 +20,6 @@ import Footer from "@/components/layout/Footer.vue";
 import HeroSection from "@/components/sections/HeroSection.vue";
 import AboutSection from "@/components/sections/AboutSection.vue";
 import ServicesSection from "@/components/sections/ServicesSection.vue";
-import SessionDetails from "@/components/sections/SessionDetails.vue";
 import FAQSection from "@/components/sections/FAQSection.vue";
 import ContactSection from "@/components/sections/ContactSection.vue";
 
@@ -33,7 +31,6 @@ export default {
     HeroSection,
     AboutSection,
     ServicesSection,
-    SessionDetails,
     FAQSection,
     ContactSection,
   },

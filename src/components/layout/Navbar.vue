@@ -2,8 +2,7 @@
   <header class="navbar">
     <div class="navbar-inner">
       <div class="brand">
-        <span>Joanne Barnuevo</span>
-        <small>Counselling</small>
+        <span>Joanne Counselling</span>
       </div>
 
       <button
@@ -14,10 +13,22 @@
         aria-label="Toggle navigation"
       >
         <svg v-if="!menuOpen" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M3 7h18M3 12h18M3 17h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          <path
+            d="M3 7h18M3 12h18M3 17h18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
         </svg>
         <svg v-else viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          <path
+            d="M6 6l12 12M18 6L6 18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
         </svg>
       </button>
 
@@ -29,7 +40,6 @@
         <a href="#home" @click="closeMenu">Home</a>
         <a href="#about" @click="closeMenu">About</a>
         <a href="#services" @click="closeMenu">Services</a>
-        <a href="#sessions" @click="closeMenu">Sessions</a>
         <a href="#faq" @click="closeMenu">FAQ</a>
         <a href="#contact" @click="closeMenu">Contact</a>
       </nav>
@@ -62,7 +72,7 @@ export default {
   top: 0;
   z-index: 20;
   width: 100%;
-  background: rgba(245, 233, 226, 0.96);
+  background: #eedacf;
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(45, 42, 36, 0.08);
 }
@@ -79,20 +89,12 @@ export default {
 }
 
 .brand {
-  display: flex;
-  flex-direction: column;
-  font-weight: 700;
-  color: #4c3a2f;
-  font-family: "Dancing Script", cursive;
-  font-size: 1.75rem;
+  display: inline-flex;
+  font-weight: 500;
+  color: #b86b47;
+  font-family: "Euphoria Script", cursive;
+  font-size: 3rem;
   line-height: 1.05;
-}
-
-.brand small {
-  font-size: 0.9rem;
-  color: #846754;
-  font-family: "Open Sans", ui-sans-serif, system-ui, sans-serif;
-  margin-top: 4px;
 }
 
 .menu-toggle {

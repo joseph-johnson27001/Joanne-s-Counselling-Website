@@ -17,7 +17,6 @@ body {
   background: #f5e9e2;
   font-family:
     "Open Sans",
-    Inter,
     ui-sans-serif,
     system-ui,
     -apple-system,

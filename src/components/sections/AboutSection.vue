@@ -36,12 +36,11 @@
         </p>
       </div>
 
-      <div
-        class="about-visual"
-        role="img"
-        aria-label="Image placeholder for Joanne's counseling background"
-      >
-        <span>Photo placeholder</span>
+      <div class="about-visual">
+        <img
+          src="https://picsum.photos/seed/joanne-about/640/520"
+          alt="Portrait-style image placeholder representing Joanne's counseling background"
+        />
       </div>
     </div>
   </section>
@@ -98,9 +97,14 @@ h2 {
   background: rgba(167, 150, 123, 0.12);
   display: grid;
   place-items: center;
-  color: #7d604f;
-  text-transform: uppercase;
-  font-weight: 700;
+  overflow: hidden;
+}
+
+.about-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 @media (min-width: 900px) {

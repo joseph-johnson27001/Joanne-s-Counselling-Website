@@ -30,12 +30,11 @@
         <p>English and Tagalog</p>
       </div>
 
-      <div
-        class="contact-card image-placeholder-card"
-        role="img"
-        aria-label="Illustration placeholder for contacting Joanne"
-      >
-        <span>Contact image placeholder</span>
+      <div class="contact-card image-placeholder-card">
+        <img
+          src="https://picsum.photos/seed/joanne-contact/640/420"
+          alt="Contact and counseling placeholder image"
+        />
       </div>
     </div>
   </section>
@@ -100,9 +99,17 @@ h2 {
   min-height: 220px;
   display: grid;
   place-items: center;
+  overflow: hidden;
   color: #7d604f;
   background: rgba(167, 150, 123, 0.14);
   font-weight: 700;
+}
+
+.image-placeholder-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 @media (min-width: 900px) {

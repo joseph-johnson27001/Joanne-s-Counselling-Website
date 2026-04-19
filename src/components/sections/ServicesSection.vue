@@ -11,6 +11,11 @@
 
     <div class="service-grid">
       <Card>
+        <img
+          src="https://picsum.photos/seed/joanne-children/480/320"
+          alt="Children's counseling placeholder image"
+          class="service-card-image"
+        />
         <h3>Children (ages 4–18)</h3>
         <p>
           Support for school issues, anxiety, emotion regulation, and social
@@ -18,12 +23,22 @@
         </p>
       </Card>
       <Card>
+        <img
+          src="https://picsum.photos/seed/joanne-adolescents/480/320"
+          alt="Adolescents counseling placeholder image"
+          class="service-card-image"
+        />
         <h3>Adolescents</h3>
         <p>
           Guidance through identity, relationships, stress, and transitions.
         </p>
       </Card>
       <Card>
+        <img
+          src="https://picsum.photos/seed/joanne-adults/480/320"
+          alt="Adults counseling placeholder image"
+          class="service-card-image"
+        />
         <h3>Adults</h3>
         <p>
           Individual support for life changes, grief, self-esteem, and expat
@@ -108,6 +123,15 @@ h2 {
   display: grid;
   gap: 24px;
   margin-bottom: 34px;
+}
+
+.service-card-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+  margin-bottom: 18px;
 }
 
 .service-grid h3 {

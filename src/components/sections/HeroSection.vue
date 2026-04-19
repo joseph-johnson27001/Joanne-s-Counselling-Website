@@ -18,12 +18,11 @@
       </div>
     </div>
 
-    <div
-      class="hero-visual"
-      role="img"
-      aria-label="Illustration placeholder for playful healing and connection"
-    >
-      <span>Image placeholder</span>
+    <div class="hero-visual">
+      <img
+        src="https://picsum.photos/seed/joanne-hero/720/520"
+        alt="Soft abstract illustration representing playful healing and connection"
+      />
     </div>
   </section>
 </template>
@@ -87,10 +86,14 @@ h1 {
   background: rgba(184, 107, 71, 0.12);
   display: grid;
   place-items: center;
-  color: #7d604f;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  overflow: hidden;
+}
+
+.hero-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 @media (min-width: 900px) {
