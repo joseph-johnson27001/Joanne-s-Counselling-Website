@@ -36,10 +36,11 @@
         </p>
       </div>
 
-      <div class="about-visual">
+      <div class="about-visual visual-container">
         <img
           src="https://picsum.photos/seed/joanne-about/640/520"
           alt="Portrait-style image placeholder representing Joanne's counseling background"
+          class="image-fill"
         />
       </div>
     </div>
@@ -55,8 +56,6 @@ export default {
 <style scoped>
 .section-block {
   background: #faf7f3;
-  padding: 40px 40px;
-  scroll-margin-top: 100px;
 }
 
 .about-grid {
@@ -78,29 +77,6 @@ export default {
 
 .about-visual {
   min-height: 340px;
-  border-radius: 24px;
-  background: linear-gradient(
-    135deg,
-    rgba(212, 175, 116, 0.15) 0%,
-    rgba(184, 107, 71, 0.1) 100%
-  );
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-  box-shadow: 0 20px 48px rgba(184, 107, 71, 0.12);
-  border: 1px solid rgba(184, 107, 71, 0.08);
-  transition: all 0.3s ease;
-}
-
-.about-visual:hover {
-  box-shadow: 0 28px 56px rgba(184, 107, 71, 0.16);
-}
-
-.about-visual img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
 }
 
 @media (min-width: 900px) {

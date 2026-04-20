@@ -94,8 +94,6 @@ export default {
 <style scoped>
 .section-block {
   background: #f5e9e2;
-  padding: 40px 40px;
-  scroll-margin-top: 100px;
 }
 
 .service-grid {
@@ -114,26 +112,12 @@ export default {
 }
 
 .service-grid h3 {
-  margin-top: 0;
-  margin-bottom: 12px;
   font-size: 1.3rem;
 }
 
-.service-grid p {
-  margin-top: 0;
-  line-height: 1.75;
-  color: #4d4338;
-  font-size: 0.95rem;
-}
-
 .service-list {
-  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 40px;
-  padding: 32px 28px;
-  border-radius: 24px;
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(184, 107, 71, 0.1);
-  box-shadow: 0 8px 24px rgba(45, 42, 36, 0.06);
 }
 
 .service-list h4 {
@@ -161,7 +145,7 @@ export default {
   }
 
   .service-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr !important;
   }
 }
 </style>

@@ -61,8 +61,6 @@ export default {
 <style scoped>
 .section-block {
   background: #faf7f3;
-  padding: 40px 40px;
-  scroll-margin-top: 100px;
 }
 
 .accordion-list {

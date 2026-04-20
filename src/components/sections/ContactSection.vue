@@ -30,10 +30,11 @@
         <p>English and Tagalog</p>
       </div>
 
-      <div class="contact-card image-placeholder-card">
+      <div class="visual-container">
         <img
           src="https://picsum.photos/seed/joanne-contact/640/420"
           alt="Contact and counseling placeholder image"
+          class="image-fill"
         />
       </div>
     </div>
@@ -49,8 +50,6 @@ export default {
 <style scoped>
 .section-block {
   background: #f5e9e2;
-  padding: 40px 40px;
-  scroll-margin-top: 100px;
 }
 
 .contact-grid {
@@ -92,29 +91,6 @@ export default {
   margin: 0;
   line-height: 1.8;
   color: #4d4338;
-}
-
-.image-placeholder-card {
-  min-height: 280px;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-  color: #7d604f;
-  background: linear-gradient(
-    135deg,
-    rgba(212, 175, 116, 0.15) 0%,
-    rgba(184, 107, 71, 0.1) 100%
-  );
-  font-weight: 700;
-  border: 1px solid rgba(184, 107, 71, 0.08);
-  box-shadow: 0 8px 24px rgba(45, 42, 36, 0.06);
-}
-
-.image-placeholder-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
 }
 
 @media (min-width: 900px) {

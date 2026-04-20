@@ -14,14 +14,15 @@
       </p>
       <div class="hero-actions">
         <Button href="#contact">Book a consultation</Button>
-        <a class="secondary-link" href="#about">Learn more</a>
+        <a class="underline-link" href="#about">Learn more</a>
       </div>
     </div>
 
-    <div class="hero-visual">
+    <div class="hero-visual visual-container">
       <img
         src="https://picsum.photos/seed/joanne-hero/720/520"
         alt="Soft abstract illustration representing playful healing and connection"
+        class="image-fill"
       />
     </div>
   </section>
@@ -43,8 +44,8 @@ export default {
   display: grid;
   gap: 12px;
   align-items: start;
-  padding: 40px 40px !important;
-  scroll-margin-top: 100px;
+  padding: 80px 40px !important;
+  scroll-margin-top: 80px;
   background: #f5e9e2;
 }
 
@@ -62,7 +63,6 @@ h1 {
 
 .hero-text {
   margin: 0 0 32px 0;
-  color: #4d4338;
   line-height: 1.8;
   font-size: 1.05rem;
 }
@@ -74,65 +74,15 @@ h1 {
   align-items: center;
 }
 
-.secondary-link {
-  color: #4c3a2f;
-  font-weight: 700;
-  text-decoration: none;
-  position: relative;
-  letter-spacing: 0.3px;
-  transition: all 0.3s ease;
-  padding: 8px 4px;
-}
-
-.secondary-link::after {
-  content: "";
-  position: absolute;
-  bottom: 4px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(to right, #b86b47, #d4a574);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease;
-}
-
-.secondary-link:hover::after {
-  transform: scaleX(1);
-}
-
 .hero-visual {
   height: 400px;
-  border-radius: 28px;
-  background: linear-gradient(
-    135deg,
-    rgba(212, 175, 116, 0.15) 0%,
-    rgba(184, 107, 71, 0.1) 100%
-  );
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-  box-shadow: 0 20px 48px rgba(184, 107, 71, 0.12);
-  border: 1px solid rgba(184, 107, 71, 0.08);
-  transition: all 0.3s ease;
-}
-
-.hero-visual:hover {
-  box-shadow: 0 28px 56px rgba(184, 107, 71, 0.16);
-}
-
-.hero-visual img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
 }
 
 @media (min-width: 900px) {
   .hero-section {
     grid-template-columns: 1.1fr 0.9fr;
     gap: 14px;
-    padding: 50px 0 50px;
+    padding: 50px 20px;
   }
 }
 </style>
