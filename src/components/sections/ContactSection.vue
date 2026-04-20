@@ -4,9 +4,12 @@
       <p class="eyebrow">Contact</p>
       <h2>Ready to connect?</h2>
       <p class="subtitle">
-        Booking is simple. Send a message to joanneb.counselling@gmail.com with
-        a brief introduction and what you’d like to share in counseling. I’ll
-        respond with next steps and available times.
+        Booking is simple. Send a message to
+        <a href="mailto:joanneb.counselling@gmail.com" class="email-link"
+          >joanneb.counselling@gmail.com</a
+        >
+        with a brief introduction and what you’d like to share in counseling.
+        I’ll respond with next steps and available times.
       </p>
     </div>
 
@@ -91,6 +94,17 @@ export default {
   margin: 0;
   line-height: 1.8;
   color: #4d4338;
+}
+
+.email-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.email-link:hover {
+  color: #0052a3;
 }
 
 @media (min-width: 900px) {

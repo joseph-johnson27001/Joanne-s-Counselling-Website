@@ -125,7 +125,7 @@ export default {
 }
 
 .nav-links a {
-  color: #ffffff;
+  color: whitesmoke;
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
@@ -143,14 +143,14 @@ export default {
   left: 0;
   right: 0;
   height: 2px;
-  background: #8fa87a;
+  background: #fff;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #8fa87a;
+  color: #fff;
 }
 
 .nav-links a:hover::after {

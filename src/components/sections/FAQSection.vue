@@ -17,8 +17,10 @@
 
       <Accordion title="How do I book an appointment?">
         <p>
-          Email me at joanneb.counselling@gmail.com. A simple introduction is
-          all that’s needed.
+          Email me at
+          <a href="mailto:joanneb.counselling@gmail.com" class="email-link"
+            >joanneb.counselling@gmail.com</a
+          >. A simple introduction is all that’s needed.
         </p>
       </Accordion>
 
@@ -73,6 +75,17 @@ export default {
 .accordion-list p {
   margin: 0;
   line-height: 1.8;
+}
+
+.email-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.email-link:hover {
+  color: #0052a3;
 }
 
 @media (max-width: 900px) {
