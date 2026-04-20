@@ -65,7 +65,7 @@ export default {
   grid-template-columns: 3fr 2fr;
   gap: 12px;
   align-items: center;
-  padding: 80px 0px;
+  padding: 60px 0px;
   max-width: 1400px;
   width: 100%;
   margin: 0 40px;

@@ -58,7 +58,7 @@ export default {
 
 <style scoped>
 .section-block {
-  background: #f5e9e2;
+  background: #f0e8f5;
 }
 
 .about-grid {

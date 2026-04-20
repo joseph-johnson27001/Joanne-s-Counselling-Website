@@ -75,6 +75,8 @@ export default {
   background: #4f6a49;
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  justify-content: center;
 }
 
 .navbar-inner {
@@ -85,8 +87,8 @@ export default {
   gap: 1rem;
   max-width: 1400px;
   width: 100%;
-  margin: 0 auto;
-  padding: 20px 40px;
+  padding: 20px 0px;
+  margin: 0 40px;
 }
 
 @media (max-width: 900px) {

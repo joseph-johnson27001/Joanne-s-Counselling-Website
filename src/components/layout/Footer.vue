@@ -41,9 +41,10 @@ export default {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 32px;
-  padding: 48px 40px;
-  max-width: 1200px;
+  padding: 48px 0px;
+  max-width: 1400px;
   width: 100%;
+  margin: 0 40px;
 }
 
 @media (max-width: 740px) {
