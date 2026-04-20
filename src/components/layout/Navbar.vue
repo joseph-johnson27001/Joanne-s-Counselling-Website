@@ -72,9 +72,9 @@ export default {
   top: 0;
   z-index: 20;
   width: 100%;
-  background: #eedacf;
+  background: #4f6a49;
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(45, 42, 36, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .navbar-inner {
@@ -96,8 +96,8 @@ export default {
 
 .brand {
   display: inline-flex;
-  font-weight: 500;
-  color: #b86b47;
+  font-weight: 400;
+  color: #faf7f3;
   font-family: "Euphoria Script", cursive;
   font-size: 2rem;
   line-height: 1.05;
@@ -107,7 +107,7 @@ export default {
   display: none;
   border: none;
   background: transparent;
-  color: #4c3a2f;
+  color: #faf7f3;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -125,7 +125,7 @@ export default {
 }
 
 .nav-links a {
-  color: #4c3a2f;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
@@ -143,14 +143,14 @@ export default {
   left: 0;
   right: 0;
   height: 2px;
-  background: #b86b47;
+  background: #8fa87a;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #b86b47;
+  color: #8fa87a;
 }
 
 .nav-links a:hover::after {
@@ -176,8 +176,8 @@ export default {
     gap: 0;
     padding: 20px 20px;
     border-radius: 0;
-    background: #ffffff;
-    border-bottom: 2px solid #b86b47;
+    background: #faf7f3;
+    border-bottom: 1px solid #8fa87a;
     z-index: 25;
   }
 
@@ -188,7 +188,8 @@ export default {
   .nav-links a {
     width: 100%;
     padding: 12px 0;
-    border-bottom: 1px solid rgba(45, 42, 36, 0.08);
+    color: #8fa87a;
+    border-bottom: 1px solid #f0f5f0;
   }
 
   .nav-links a:last-child {

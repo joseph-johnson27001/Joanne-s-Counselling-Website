@@ -31,7 +31,7 @@ export default {
   padding: 48px 40px;
   margin-top: 0;
   color: white;
-  background: linear-gradient(135deg, #c87d55 0%, #b86b47 100%);
+  background: #3d5a73;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 

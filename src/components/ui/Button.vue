@@ -37,8 +37,8 @@ export default {
   gap: 0.5rem;
   padding: 1rem 2rem;
   border-radius: 999px;
-  border: 2px solid #b86b47;
-  background: #b86b47;
+  border: 2px solid #a35f3f;
+  background: #a35f3f;
   color: white;
   font-weight: 700;
   letter-spacing: 0.3px;

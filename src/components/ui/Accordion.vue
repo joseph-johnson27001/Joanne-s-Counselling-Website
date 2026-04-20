@@ -69,12 +69,12 @@ export default {
 }
 
 .summary:hover {
-  color: #b86b47;
+  color: #6d9370;
 }
 
 .icon {
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  color: #b86b47;
+  color: #6d9370;
   font-size: 1.2rem;
 }
 

@@ -85,7 +85,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(to right, #b86b47, #d4a574);
+  background: linear-gradient(to right, #8fa87a, #9db287);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
