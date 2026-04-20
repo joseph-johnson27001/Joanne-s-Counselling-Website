@@ -178,6 +178,7 @@ export default {
     border-radius: 0;
     background: #faf7f3;
     border-bottom: 1px solid #8fa87a;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
     z-index: 25;
   }
 
@@ -189,7 +190,7 @@ export default {
     width: 100%;
     padding: 12px 0;
     color: #8fa87a;
-    border-bottom: 1px solid #f0f5f0;
+    border-bottom: 1px solid #d4d0cc;
   }
 
   .nav-links a:last-child {
