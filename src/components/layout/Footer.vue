@@ -50,7 +50,7 @@ export default {
   .footer-content {
     flex-direction: column;
     gap: 24px;
-    padding: 40px 20px;
+    padding: 40px 0px;
   }
 }
 
