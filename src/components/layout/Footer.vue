@@ -1,5 +1,5 @@
 <template>
-  <footer class="site-footer">
+  <footer class="section-block site-footer">
     <div class="footer-content">
       <div>
         <p>Joanne Barnuevo Counselling</p>
@@ -9,7 +9,6 @@
       </div>
       <div>
         <p>
-          Email:
           <a href="mailto:joanneb.counselling@gmail.com"
             >joanneb.counselling@gmail.com</a
           >
@@ -30,7 +29,6 @@ export default {
 .site-footer {
   display: flex;
   justify-content: center;
-  padding: 0;
   color: white;
   background: #3d5a73;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
@@ -41,7 +39,6 @@ export default {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 32px;
-  padding: 48px 40px;
   max-width: 1400px;
   width: 100%;
 }
@@ -50,7 +47,6 @@ export default {
   .footer-content {
     flex-direction: column;
     gap: 24px;
-    padding: 40px 0px;
   }
 }
 
@@ -99,7 +95,6 @@ export default {
   .site-footer {
     flex-direction: column;
     gap: 24px;
-    padding: 40px 24px;
   }
 }
 </style>
