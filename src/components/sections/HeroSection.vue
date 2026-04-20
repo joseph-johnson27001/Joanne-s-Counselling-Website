@@ -12,6 +12,12 @@
         space, my practice is grounded in playful healing, attentive listening,
         and meaningful connection.
       </p>
+      <p class="hero-text">
+        Lorem Ipsum Generator 5 Paragraphs Copy Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
       <div class="hero-actions">
         <Button href="#contact">Book a consultation</Button>
       </div>
@@ -90,8 +96,8 @@ h1 {
 }
 
 .hero-visual {
-  height: 450px;
-  width: 450px;
+  height: 500px;
+  width: 500px;
   overflow: hidden;
 }
 
