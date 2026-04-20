@@ -38,16 +38,12 @@
 
     <div class="service-list">
       <div>
-        <h4>Types of counseling</h4>
-        <ul>
-          <li>Individual sessions</li>
-          <li>Group sessions</li>
-          <li>Parent guidance</li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Areas of specialization</h4>
+        <p class="specialization-intro">
+          I work with a wide range of concerns. Whether you're navigating
+          anxiety, life transitions, relationship challenges, or simply seeking
+          support for growth, I'm here to help. Some of the areas I specialize
+          in include:
+        </p>
         <ul>
           <li>
             Anxiety, depression, life transitions, relocation, expat issues
@@ -104,9 +100,11 @@ export default {
   font-size: 1.3rem;
 }
 
-.service-list {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 40px;
+.specialization-intro {
+  margin: 0 0 24px 0;
+  color: #4d4338;
+  line-height: 1.8;
+  font-size: 1.02rem;
 }
 
 .service-list h4 {
@@ -131,10 +129,6 @@ export default {
 @media (min-width: 760px) {
   .service-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .service-list {
-    grid-template-columns: 1fr !important;
   }
 }
 </style>
