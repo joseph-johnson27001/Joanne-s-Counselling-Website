@@ -1,5 +1,5 @@
 <template>
-  <header class="navbar">
+  <header class="section-block navbar">
     <div class="navbar-inner">
       <div class="brand">
         <span>Joanne Barnuevo</span>
@@ -74,6 +74,8 @@ export default {
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   display: flex;
   justify-content: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .navbar-inner {
@@ -84,13 +86,7 @@ export default {
   gap: 1rem;
   max-width: 1400px;
   width: 100%;
-  padding: 20px 40px;
-}
-
-@media (max-width: 900px) {
-  .navbar-inner {
-    padding: 20px;
-  }
+  padding: 20px 0px;
 }
 
 .brand {
