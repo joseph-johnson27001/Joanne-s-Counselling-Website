@@ -14,7 +14,6 @@
       </p>
       <div class="hero-actions">
         <Button href="#contact">Book a consultation</Button>
-        <a class="underline-link" href="#about">Learn more</a>
       </div>
     </div>
 
@@ -79,6 +78,14 @@ h1 {
   flex-wrap: wrap;
   gap: 24px;
   align-items: center;
+}
+
+@media (max-width: 640px) {
+  .hero-actions {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .hero-visual {
