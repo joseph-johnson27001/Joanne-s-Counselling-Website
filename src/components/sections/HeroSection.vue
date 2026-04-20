@@ -65,7 +65,7 @@ export default {
 @media (max-width: 900px) {
   .hero-content {
     grid-template-columns: 1fr;
-    padding: 50px 20px;
+    padding: 20px 0px;
     gap: 24px;
     align-items: start;
   }
