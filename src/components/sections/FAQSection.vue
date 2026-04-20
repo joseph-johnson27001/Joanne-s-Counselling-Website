@@ -9,10 +9,14 @@
       <div class="accordion-list">
         <Accordion title="What is your approach to counseling?">
           <p>
-            My person-centered approach means I create a supportive space where
-            you can share your story at your own pace. Healing often begins with
-            playful exploration, attentive listening, and building trust in our
-            connection.
+            My approach to counselling is person-centred and integrative. During
+            sessions, we focus on understanding unique experiences, needs, and
+            goals, and work on creating a warm, trusting environment where you
+            feel heard and supported. I draw from different therapeutic methods
+            that can span from cognitive-behavioural techniques to creative
+            activities, so the therapeutic work is tailored to what works best
+            for you. Your experience guides your sessions, and I adapt my
+            approach to support you in the way that feels most helpful.
           </p>
         </Accordion>
 

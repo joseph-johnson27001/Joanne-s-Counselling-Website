@@ -16,30 +16,18 @@
 
       <div class="contact-grid">
         <div class="contact-card">
-          <h3>Office Hours</h3>
-          <ul>
-            <li>Monday: 9:00–17:00</li>
-            <li>Friday: 15:00–19:00</li>
-            <li>Saturday: 9:00–16:00</li>
-          </ul>
+          <h3>Appointment</h3>
+          <p>
+            You can reach me by sending an email to
+            <a href="mailto:joanneb.counselling@gmail.com" class="email-link"
+              >joanneb.counselling@gmail.com</a
+            >. A simple introduction is all that's needed.
+          </p>
         </div>
 
         <div class="contact-card">
-          <h3>Location</h3>
-          <p>Bangkok (address provided upon booking)</p>
-        </div>
-
-        <div class="contact-card">
-          <h3>Languages</h3>
-          <p>English and Tagalog</p>
-        </div>
-
-        <div class="visual-container">
-          <img
-            src="https://picsum.photos/seed/joanne-contact/640/420"
-            alt="Contact and counseling placeholder image"
-            class="image-fill"
-          />
+          <h3>Age</h3>
+          <p>Children (age 4+), adolescents, and adults.</p>
         </div>
       </div>
     </div>

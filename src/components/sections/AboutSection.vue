@@ -13,28 +13,51 @@
       <div class="about-grid">
         <div class="about-copy">
           <p>
-            My path in psychology began with a Bachelor of Science in
-            Psychology, shaped by volunteering at national mental health events
-            and clinical internships with youth. Responding as a Mental Health
-            First Aid volunteer during Typhoon Haiyan deepened my passion for
-            practical, compassionate support.
+            A couple of students recently interviewed me for their GCSE
+            assignment. One of them asked if I always knew I wanted to study
+            psychology. Right away, my response was "I didn't!". Growing up in
+            an Asian household, for me back then, meant balancing what my
+            parents hoped for me (Ahem! medical school) with what I wanted for
+            myself. At the time, (and crossing my fingers that I wasn't the only
+            one) I didn't really have a clear answer. But what I later realized
+            is how much I value human connection.
           </p>
           <p>
-            Moving to Bangkok to help my family, I taught in daycare and
-            kindergarten settings, focusing on each child’s emotional world. The
-            COVID-19 pandemic underscored the importance of connection,
-            especially for expat families facing isolation and change.
+            This became clear while I was undertaking my Bachelor of Science in
+            Psychology as an intern in a youth reception centre where I
+            supported young people through assessments, facilitated group
+            activities, and worked alongside a team to address emotional and
+            behavioural needs. After a natural calamity in the Philippines, I
+            trained as a Mental Health First Aid provider to volunteer and offer
+            my support. These experiences gave me the chance to put theory into
+            practice and helped clarify my path forward.
           </p>
           <p>
-            I completed my Master of Science in Counselling Psychology,
-            researching parental efficacy and transactional analysis, and shared
-            my work at conferences in Japan and Thailand.
+            Months later, as I was preparing to apply for my masters, life threw
+            a curve ball and I have made the decision to move to Bangkok to
+            support my sister through a health crisis. During that time, I
+            started teaching as a kindergarten teacher, which gave me first-hand
+            experience in child development and social-emotional learning.
+            Working with young children further deepened my understanding how
+            behaviour is a form of communication. This insight inspired me to
+            pursue a certification in Therapeutic Play skills, enhancing my
+            ability to connect with and support children in meaningful ways,
+            meeting them where they are.
           </p>
           <p>
-            Now in private practice, my work is guided by play, artful
-            listening, and genuine connection. I support children, adolescents,
-            and adults in discovering strengths, navigating challenges, and
-            embracing growth.
+            By then, with a Master of Science in Counselling Psychology, I have
+            gained experience working with individuals online and later in
+            person as a school counsellor in international schools. These roles
+            (moving to a new country, changes in careers and a global pandemic
+            later) have allowed me to support clients from a wide range of
+            cultures, backgrounds, and walks of life.
+          </p>
+          <p>
+            I've learned to appreciate diversity and the unique strengths and
+            stories each person brings into the counselling room. This lead me
+            to the counsellor I am today, committed to creating a warm,
+            non-judgmental space where children, adolescents, and adults can
+            feel heard, supported, and empowered to grow.
           </p>
         </div>
 
@@ -65,6 +88,7 @@ export default {
   display: grid;
   gap: 48px;
   margin-top: 0;
+  align-items: center;
 }
 
 .about-copy p {
