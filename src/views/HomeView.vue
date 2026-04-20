@@ -4,9 +4,9 @@
 
     <main class="page-shell">
       <HeroSection />
-      <AboutSection />
       <ServicesSection />
       <FAQSection />
+      <AboutSection />
       <ContactSection />
     </main>
 
@@ -39,7 +39,6 @@ export default {
 
 <style scoped>
 .home-page {
-  background: #f5e9e2;
   color: #2f2a24;
   min-height: 100vh;
   display: flex;
@@ -48,20 +47,8 @@ export default {
 
 .page-shell {
   margin: 0 auto;
-  padding: 0 0 80px;
+  padding: 0;
   width: 100%;
   flex: 1;
-}
-
-@media (min-width: 820px) {
-  .page-shell {
-    padding: 0 0 100px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .page-shell {
-    padding: 0 0 120px;
-  }
 }
 </style>

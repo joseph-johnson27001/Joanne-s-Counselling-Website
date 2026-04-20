@@ -49,7 +49,7 @@ export default {
 
 <style scoped>
 .section-block {
-  background: #faf7f3;
+  background: #e8f0ed;
 }
 
 .contact-grid {

@@ -60,7 +60,7 @@ export default {
 
 <style scoped>
 .section-block {
-  background: #f5e9e2;
+  background: #fde8e0;
 }
 
 .accordion-list {

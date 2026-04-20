@@ -93,7 +93,7 @@ export default {
 
 <style scoped>
 .section-block {
-  background: #faf7f3;
+  background: #f0ddd0;
 }
 
 .service-grid {
