@@ -127,11 +127,13 @@ export default {
 .nav-links a {
   color: #4c3a2f;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 0.95rem;
-  letter-spacing: 0.3px;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
   transition: all 0.3s ease;
   position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
 }
 
 .nav-links a::after {
