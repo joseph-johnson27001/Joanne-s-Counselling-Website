@@ -46,7 +46,7 @@ export default {
   align-items: start;
   padding: 80px 40px !important;
   scroll-margin-top: 80px;
-  background: #f5e9e2;
+  background: #faf7f3;
 }
 
 @media (max-width: 900px) {
