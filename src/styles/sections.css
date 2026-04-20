@@ -12,6 +12,13 @@
   }
 }
 
+/* Content wrapper - constrains content to max width and centers */
+.section-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .section-heading {
   max-width: 760px;
   margin-bottom: 48px;

@@ -83,7 +83,8 @@ export default {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  width: min(1600px, 100%);
+  max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
   padding: 20px 40px;
 }

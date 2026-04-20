@@ -1,34 +1,36 @@
 <template>
   <section id="home" class="hero-section">
-    <div class="hero-copy">
-      <p class="eyebrow">
-        Healing is play, listening is art, the rest is connection.
-      </p>
-      <h1>Welcome!</h1>
-      <p class="hero-text">
-        Person-centered support for children, adolescents, and adults in Bangkok
-        and online. Every healing journey is unique. Whether you or your child
-        are navigating change, seeking understanding, or simply needing a safe
-        space, my practice is grounded in playful healing, attentive listening,
-        and meaningful connection.
-      </p>
-      <p class="hero-text">
-        Lorem Ipsum Generator 5 Paragraphs Copy Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-      <div class="hero-actions">
-        <Button href="#contact">Book a consultation</Button>
+    <div class="hero-content">
+      <div class="hero-copy">
+        <p class="eyebrow">
+          Healing is play, listening is art, the rest is connection.
+        </p>
+        <h1>Welcome!</h1>
+        <p class="hero-text">
+          Person-centered support for children, adolescents, and adults in
+          Bangkok and online. Every healing journey is unique. Whether you or
+          your child are navigating change, seeking understanding, or simply
+          needing a safe space, my practice is grounded in playful healing,
+          attentive listening, and meaningful connection.
+        </p>
+        <p class="hero-text">
+          Lorem Ipsum Generator 5 Paragraphs Copy Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <div class="hero-actions">
+          <Button href="#contact">Book a consultation</Button>
+        </div>
       </div>
-    </div>
 
-    <div class="hero-visual visual-container">
-      <img
-        src="@/assets/images/bike_image.jpeg"
-        alt="Joanne Barnuevo practicing self-care and wellness"
-        class="image-fill"
-      />
+      <div class="hero-visual visual-container">
+        <img
+          src="@/assets/images/bike_image.jpeg"
+          alt="Joanne Barnuevo practicing self-care and wellness"
+          class="image-fill"
+        />
+      </div>
     </div>
   </section>
 </template>
@@ -46,19 +48,32 @@ export default {
 
 <style scoped>
 .hero-section {
-  display: grid;
-  gap: 12px;
-  align-items: start;
-  padding: 80px 40px !important;
+  display: flex;
+  justify-content: center;
+  padding: 0;
   scroll-margin-top: 75px;
   background: #fef9f5;
   width: 100%;
 }
 
+.hero-section > * {
+  flex: 1;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 12px;
+  align-items: center;
+  padding: 80px 0px;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 40px;
+}
+
 @media (max-width: 900px) {
-  .hero-section {
-    padding: 50px 20px !important;
-    scroll-margin-top: 70px;
+  .hero-content {
+    padding: 50px 20px;
   }
 }
 
@@ -87,32 +102,17 @@ h1 {
   align-items: center;
 }
 
+.hero-visual .image-fill {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+}
+
 @media (max-width: 640px) {
   .hero-actions {
     justify-content: center;
     width: 100%;
     margin-bottom: 20px;
-  }
-}
-
-.hero-visual {
-  height: 500px;
-  width: 500px;
-  overflow: hidden;
-}
-
-.hero-visual .image-fill {
-  width: 100%;
-  height: 100%;
-  object-fit: cover !important;
-  object-position: bottom !important;
-}
-
-@media (min-width: 900px) {
-  .hero-section {
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 14px;
-    padding: 50px 20px;
   }
 }
 </style>

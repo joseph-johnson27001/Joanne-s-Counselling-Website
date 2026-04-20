@@ -1,6 +1,7 @@
 <template>
   <section id="faq" class="section-block faq-block">
-    <div class="section-heading">
+    <div class="section-content">
+      <div class="section-heading">
       <p class="eyebrow">FAQ</p>
       <h2>Questions families and clients often ask.</h2>
     </div>
@@ -46,6 +47,7 @@
         </p>
       </Accordion>
     </div>
+  </div>
   </section>
 </template>
 

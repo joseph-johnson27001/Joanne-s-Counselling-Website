@@ -1,6 +1,7 @@
 <template>
   <section id="contact" class="section-block contact-block">
-    <div class="section-heading">
+    <div class="section-content">
+      <div class="section-heading">
       <p class="eyebrow">Contact</p>
       <h2>Ready to connect?</h2>
       <p class="subtitle">
@@ -41,6 +42,7 @@
         />
       </div>
     </div>
+  </div>
   </section>
 </template>
 

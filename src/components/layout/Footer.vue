@@ -1,17 +1,21 @@
 <template>
   <footer class="site-footer">
-    <div>
-      <p>Joanne Barnuevo Counselling</p>
-      <p>Supporting children, adolescents, and adults in Bangkok and online.</p>
-    </div>
-    <div>
-      <p>
-        Email:
-        <a href="mailto:joanneb.counselling@gmail.com"
-          >joanneb.counselling@gmail.com</a
-        >
-      </p>
-      <p>© 2026 Joanne Barnuevo</p>
+    <div class="footer-content">
+      <div>
+        <p>Joanne Barnuevo Counselling</p>
+        <p>
+          Supporting children, adolescents, and adults in Bangkok and online.
+        </p>
+      </div>
+      <div>
+        <p>
+          Email:
+          <a href="mailto:joanneb.counselling@gmail.com"
+            >joanneb.counselling@gmail.com</a
+          >
+        </p>
+        <p>© 2026 Joanne Barnuevo</p>
+      </div>
     </div>
   </footer>
 </template>
@@ -25,14 +29,29 @@ export default {
 <style scoped>
 .site-footer {
   display: flex;
+  justify-content: center;
+  padding: 0;
+  color: white;
+  background: #3d5a73;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-content {
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 32px;
   padding: 48px 40px;
-  margin-top: 0;
-  color: white;
-  background: #3d5a73;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  max-width: 1200px;
+  width: 100%;
+}
+
+@media (max-width: 740px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px 24px;
+  }
 }
 
 .site-footer div {

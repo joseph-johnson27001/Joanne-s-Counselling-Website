@@ -1,6 +1,7 @@
 <template>
   <section id="services" class="section-block services-block">
-    <div class="section-heading">
+    <div class="section-content">
+      <div class="section-heading">
       <p class="eyebrow">Services</p>
       <h2>Healing is play. Listening is art. The rest is connection.</h2>
       <p class="subtitle">
@@ -61,6 +62,7 @@
           </li>
         </ul>
       </div>
+    </div>
     </div>
   </section>
 </template>
