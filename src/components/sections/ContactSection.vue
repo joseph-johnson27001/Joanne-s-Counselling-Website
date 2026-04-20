@@ -48,61 +48,66 @@ export default {
 
 <style scoped>
 .section-block {
-  padding: 60px 0;
-}
-
-.section-heading {
-  max-width: 760px;
-}
-
-.eyebrow {
-  margin: 0 0 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  color: #846754;
-  font-size: 0.85rem;
-}
-
-h2 {
-  margin: 0 0 16px;
-  font-size: clamp(2rem, 3vw, 2.6rem);
-}
-
-.subtitle {
-  margin: 0 0 34px;
-  color: #4d4338;
-  line-height: 1.75;
+  background: #f5e9e2;
+  padding: 40px 40px;
+  scroll-margin-top: 100px;
 }
 
 .contact-grid {
   display: grid;
-  gap: 24px;
+  gap: 32px;
 }
 
 .contact-card {
-  padding: 26px;
-  border-radius: 26px;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(45, 42, 36, 0.1);
+  padding: 32px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(184, 107, 71, 0.08);
+  box-shadow: 0 8px 24px rgba(45, 42, 36, 0.06);
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  box-shadow: 0 16px 40px rgba(45, 42, 36, 0.1);
+  border-color: rgba(184, 107, 71, 0.16);
 }
 
 .contact-card h3 {
   margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.1rem;
 }
 
 .contact-card ul {
   margin: 0;
-  padding-left: 1.2rem;
+  padding-left: 1.5rem;
+  line-height: 1.85;
+}
+
+.contact-card li {
+  margin-bottom: 8px;
+}
+
+.contact-card p {
+  margin: 0;
+  line-height: 1.8;
+  color: #4d4338;
 }
 
 .image-placeholder-card {
-  min-height: 220px;
+  min-height: 280px;
   display: grid;
   place-items: center;
   overflow: hidden;
   color: #7d604f;
-  background: rgba(167, 150, 123, 0.14);
+  background: linear-gradient(
+    135deg,
+    rgba(212, 175, 116, 0.15) 0%,
+    rgba(184, 107, 71, 0.1) 100%
+  );
   font-weight: 700;
+  border: 1px solid rgba(184, 107, 71, 0.08);
+  box-shadow: 0 8px 24px rgba(45, 42, 36, 0.06);
 }
 
 .image-placeholder-card img {
@@ -115,6 +120,7 @@ h2 {
 @media (min-width: 900px) {
   .contact-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px;
   }
 }
 </style>

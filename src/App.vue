@@ -3,6 +3,8 @@
 </template>
 
 <script>
+import "./styles/sections.css";
+
 export default {
   name: "App",
 };
@@ -46,6 +48,7 @@ h6 {
 
 a {
   color: inherit;
+  transition: color 0.2s ease;
 }
 
 button,

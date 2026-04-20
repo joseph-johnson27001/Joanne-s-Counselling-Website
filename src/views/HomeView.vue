@@ -41,17 +41,27 @@ export default {
 .home-page {
   background: #f5e9e2;
   color: #2f2a24;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-shell {
-  max-width: 1600px;
   margin: 0 auto;
-  padding: 0 24px 72px;
+  padding: 0 0 80px;
+  width: 100%;
+  flex: 1;
 }
 
 @media (min-width: 820px) {
   .page-shell {
-    padding: 0 32px 88px;
+    padding: 0 0 100px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .page-shell {
+    padding: 0 0 120px;
   }
 }
 </style>

@@ -93,36 +93,15 @@ export default {
 
 <style scoped>
 .section-block {
-  padding: 60px 0;
-}
-
-.section-heading {
-  max-width: 760px;
-}
-
-.eyebrow {
-  margin: 0 0 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  color: #846754;
-  font-size: 0.85rem;
-}
-
-h2 {
-  margin: 0 0 16px;
-  font-size: clamp(2rem, 3vw, 2.6rem);
-}
-
-.subtitle {
-  margin: 0 0 36px;
-  color: #4d4338;
-  line-height: 1.7;
+  background: #f5e9e2;
+  padding: 40px 40px;
+  scroll-margin-top: 100px;
 }
 
 .service-grid {
   display: grid;
-  gap: 24px;
-  margin-bottom: 34px;
+  gap: 28px;
+  margin-bottom: 64px;
 }
 
 .service-card-image {
@@ -136,27 +115,44 @@ h2 {
 
 .service-grid h3 {
   margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+}
+
+.service-grid p {
+  margin-top: 0;
+  line-height: 1.75;
+  color: #4d4338;
+  font-size: 0.95rem;
 }
 
 .service-list {
   display: grid;
-  gap: 28px;
+  gap: 40px;
+  padding: 32px 28px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(184, 107, 71, 0.1);
+  box-shadow: 0 8px 24px rgba(45, 42, 36, 0.06);
 }
 
 .service-list h4 {
-  margin-bottom: 14px;
+  margin: 0 0 18px 0;
   color: #4c3a2f;
+  font-size: 1.1rem;
+  letter-spacing: 0.3px;
 }
 
 .service-list ul {
   margin: 0;
-  padding-left: 1.2rem;
+  padding-left: 1.5rem;
   color: #51463d;
 }
 
 .service-list li {
-  margin-bottom: 0.9rem;
-  line-height: 1.7;
+  margin-bottom: 12px;
+  line-height: 1.8;
+  font-size: 0.95rem;
 }
 
 @media (min-width: 760px) {

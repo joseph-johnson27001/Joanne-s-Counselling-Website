@@ -54,50 +54,46 @@ export default {
 
 <style scoped>
 .section-block {
-  padding: 60px 0;
-}
-
-.section-heading {
-  max-width: 760px;
-}
-
-.eyebrow {
-  margin: 0 0 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  color: #846754;
-  font-size: 0.85rem;
-}
-
-h2 {
-  margin: 0 0 16px;
-  font-size: clamp(2rem, 3vw, 2.6rem);
-}
-
-.subtitle {
-  margin: 0;
-  color: #5a4f45;
+  background: #faf7f3;
+  padding: 40px 40px;
+  scroll-margin-top: 100px;
 }
 
 .about-grid {
   display: grid;
-  gap: 28px;
-  margin-top: 32px;
+  gap: 48px;
+  margin-top: 0;
 }
 
 .about-copy p {
-  margin: 0 0 18px;
-  line-height: 1.8;
+  margin: 0 0 24px;
+  line-height: 1.85;
   color: #4d4338;
+  font-size: 1.02rem;
+}
+
+.about-copy p:last-child {
+  margin-bottom: 0;
 }
 
 .about-visual {
-  min-height: 300px;
-  border-radius: 28px;
-  background: rgba(167, 150, 123, 0.12);
+  min-height: 340px;
+  border-radius: 24px;
+  background: linear-gradient(
+    135deg,
+    rgba(212, 175, 116, 0.15) 0%,
+    rgba(184, 107, 71, 0.1) 100%
+  );
   display: grid;
   place-items: center;
   overflow: hidden;
+  box-shadow: 0 20px 48px rgba(184, 107, 71, 0.12);
+  border: 1px solid rgba(184, 107, 71, 0.08);
+  transition: all 0.3s ease;
+}
+
+.about-visual:hover {
+  box-shadow: 0 28px 56px rgba(184, 107, 71, 0.16);
 }
 
 .about-visual img {
@@ -110,6 +106,7 @@ h2 {
 @media (min-width: 900px) {
   .about-grid {
     grid-template-columns: 1fr 0.9fr;
+    gap: 52px;
   }
 }
 </style>

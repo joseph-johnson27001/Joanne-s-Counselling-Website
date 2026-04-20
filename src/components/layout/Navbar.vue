@@ -85,7 +85,7 @@ export default {
   gap: 1rem;
   width: min(1600px, 100%);
   margin: 0 auto;
-  padding: 20px 24px;
+  padding: 20px 40px;
 }
 
 .brand {
@@ -122,10 +122,31 @@ export default {
   color: #4c3a2f;
   text-decoration: none;
   font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #b86b47;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
 }
 
 .nav-links a:hover {
   color: #b86b47;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
 }
 
 @media (max-width: 820px) {
@@ -136,8 +157,8 @@ export default {
   .nav-links {
     position: absolute;
     top: calc(100% + 4px);
-    right: 24px;
-    left: 24px;
+    right: 20px;
+    left: 20px;
     display: none;
     flex-direction: column;
     gap: 12px;

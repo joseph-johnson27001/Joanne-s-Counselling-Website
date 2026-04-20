@@ -1,0 +1,33 @@
+/* Global Section Styles */
+
+.section-block {
+  padding: 40px 40px;
+  scroll-margin-top: 100px;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: 48px;
+}
+
+.eyebrow {
+  margin: 0 0 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #846754;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.section-block h2 {
+  margin: 0 0 20px;
+  font-size: clamp(2.2rem, 4vw, 2.8rem);
+  letter-spacing: -0.01em;
+}
+
+.subtitle {
+  margin: 0;
+  color: #4d4338;
+  line-height: 1.75;
+  font-size: 1.05rem;
+}

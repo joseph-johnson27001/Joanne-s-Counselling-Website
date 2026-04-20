@@ -42,51 +42,83 @@ export default {
 .hero-section {
   display: grid;
   gap: 12px;
-  align-items: center;
-  padding: 40px 0 40px;
+  align-items: start;
+  padding: 40px 40px !important;
+  scroll-margin-top: 100px;
+  background: #f5e9e2;
 }
 
 .eyebrow {
-  margin: 0 0 16px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: #846754;
-  font-size: 0.9rem;
+  margin: 0 0 24px;
+  font-size: 0.8rem;
 }
 
 h1 {
-  margin: 0;
-  font-size: clamp(2.6rem, 5vw, 3.8rem);
-  line-height: 1.05;
+  margin: 0 0 24px 0;
+  font-size: clamp(2.8rem, 6vw, 4rem);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
 }
 
 .hero-text {
-  margin: 24px 0;
+  margin: 0 0 32px 0;
   color: #4d4338;
-  line-height: 1.75;
-  max-width: 720px;
+  line-height: 1.8;
+  font-size: 1.05rem;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 24px;
   align-items: center;
 }
 
 .secondary-link {
   color: #4c3a2f;
-  font-weight: 600;
-  text-decoration: underline;
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+  padding: 8px 4px;
+}
+
+.secondary-link::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, #b86b47, #d4a574);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.secondary-link:hover::after {
+  transform: scaleX(1);
 }
 
 .hero-visual {
-  min-height: 320px;
-  border-radius: 32px;
-  background: rgba(184, 107, 71, 0.12);
+  height: 400px;
+  border-radius: 28px;
+  background: linear-gradient(
+    135deg,
+    rgba(212, 175, 116, 0.15) 0%,
+    rgba(184, 107, 71, 0.1) 100%
+  );
   display: grid;
   place-items: center;
   overflow: hidden;
+  box-shadow: 0 20px 48px rgba(184, 107, 71, 0.12);
+  border: 1px solid rgba(184, 107, 71, 0.08);
+  transition: all 0.3s ease;
+}
+
+.hero-visual:hover {
+  box-shadow: 0 28px 56px rgba(184, 107, 71, 0.16);
 }
 
 .hero-visual img {
@@ -100,6 +132,7 @@ h1 {
   .hero-section {
     grid-template-columns: 1.1fr 0.9fr;
     gap: 14px;
+    padding: 50px 0 50px;
   }
 }
 </style>

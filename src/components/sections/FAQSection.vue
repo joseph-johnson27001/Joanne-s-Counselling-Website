@@ -60,33 +60,26 @@ export default {
 
 <style scoped>
 .section-block {
-  padding: 60px 0;
-}
-
-.section-heading {
-  max-width: 760px;
-}
-
-.eyebrow {
-  margin: 0 0 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  color: #846754;
-  font-size: 0.85rem;
-}
-
-h2 {
-  margin: 0 0 28px;
-  font-size: clamp(2rem, 3vw, 2.6rem);
+  background: #faf7f3;
+  padding: 40px 40px;
+  scroll-margin-top: 100px;
 }
 
 .accordion-list {
   display: grid;
-  gap: 16px;
-  margin-top: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 0;
 }
 
 .accordion-list p {
   margin: 0;
+  line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+  .accordion-list {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
