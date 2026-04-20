@@ -49,6 +49,13 @@ export default {
   background: #f5e9e2;
 }
 
+@media (max-width: 900px) {
+  .hero-section {
+    padding: 50px 20px !important;
+    scroll-margin-top: 50px;
+  }
+}
+
 .eyebrow {
   margin: 0 0 24px;
   font-size: 0.8rem;
