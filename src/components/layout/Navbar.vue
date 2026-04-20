@@ -149,10 +149,6 @@ export default {
   transition: transform 0.3s ease;
 }
 
-.nav-links a:hover {
-  color: #fff;
-}
-
 .nav-links a:hover::after {
   transform: scaleX(1);
 }
@@ -191,6 +187,28 @@ export default {
     padding: 12px 0;
     color: #8fa87a;
     border-bottom: 1px solid #d4d0cc;
+    position: relative;
+  }
+
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #8fa87a;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: #8fa87a;
+  }
+
+  .nav-links a:hover::after {
+    transform: scaleX(1);
   }
 
   .nav-links a:last-child {
