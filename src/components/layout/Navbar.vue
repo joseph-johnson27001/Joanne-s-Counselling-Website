@@ -88,12 +88,18 @@ export default {
   padding: 20px 40px;
 }
 
+@media (max-width: 900px) {
+  .navbar-inner {
+    padding: 20px;
+  }
+}
+
 .brand {
   display: inline-flex;
   font-weight: 500;
   color: #b86b47;
   font-family: "Euphoria Script", cursive;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1.05;
 }
 
@@ -150,22 +156,26 @@ export default {
 }
 
 @media (max-width: 820px) {
+  .brand {
+    font-size: 1.8rem;
+  }
+
   .menu-toggle {
     display: inline-flex;
   }
 
   .nav-links {
     position: absolute;
-    top: calc(100% + 4px);
-    right: 20px;
-    left: 20px;
+    top: 100%;
+    right: 0;
+    left: 0;
     display: none;
     flex-direction: column;
-    gap: 12px;
+    gap: 0;
     padding: 20px 20px;
-    border-radius: 22px;
-    background: rgba(245, 233, 226, 0.98);
-    box-shadow: 0 18px 40px rgba(45, 42, 36, 0.12);
+    border-radius: 0;
+    background: #ffffff;
+    border-bottom: 2px solid #b86b47;
     z-index: 25;
   }
 
