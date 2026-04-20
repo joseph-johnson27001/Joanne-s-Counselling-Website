@@ -87,8 +87,7 @@ export default {
   gap: 1rem;
   max-width: 1400px;
   width: 100%;
-  padding: 20px 0px;
-  margin: 0 40px;
+  padding: 20px 40px;
 }
 
 @media (max-width: 900px) {
