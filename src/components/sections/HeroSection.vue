@@ -10,10 +10,13 @@
           <p class="hero-text">
             Whether you've wandered here out of curiosity while searching for a
             certain kind of counselling or are simply looking for a space to see
-            what feels right for you, I'm glad you're here. My practice is
-            grounded in attentive listening, creative activities, and genuine
-            connection—offering a safe environment where you can feel supported,
-            grow, and connect in your own way and at your own pace.
+            what feels right for you, I'm glad you're here.
+          </p>
+          <p class="hero-tex">
+            My practice is grounded in attentive listening, creative activities,
+            and genuine connection—offering a safe environment where you can
+            feel supported, grow, and connect in your own way and at your own
+            pace.
           </p>
           <div class="hero-actions">
             <Button href="#contact">Book a consultation</Button>
@@ -86,6 +89,7 @@ h1 {
   flex-wrap: wrap;
   gap: 24px;
   align-items: center;
+  padding-top: 20px;
 }
 
 .hero-visual .image-fill {
