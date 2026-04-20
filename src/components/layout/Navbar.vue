@@ -160,14 +160,15 @@ export default {
   .nav-links {
     position: absolute;
     top: 100%;
-    right: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
     display: none;
     flex-direction: column;
     gap: 0;
     padding: 20px 20px;
     border-radius: 0;
-    background: #faf7f3;
+    background: whitesmoke;
     border-bottom: 1px solid #8fa87a;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
     z-index: 25;
