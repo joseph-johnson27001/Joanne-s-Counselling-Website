@@ -2,67 +2,68 @@
   <section id="services" class="section-block services-block">
     <div class="section-content">
       <div class="section-heading">
-      <p class="eyebrow">Services</p>
-      <h2>Healing is play. Listening is art. The rest is connection.</h2>
-      <p class="subtitle">
-        I offer tailored counseling through individual sessions and play therapy
-        for children, adolescents, and adults.
-      </p>
-    </div>
-
-    <div class="service-grid">
-      <Card>
-        <img
-          src="https://picsum.photos/seed/joanne-individual/480/320"
-          alt="Individual counseling placeholder image"
-          class="service-card-image"
-        />
-        <h3>Individual Counseling</h3>
-        <p>
-          One-on-one support for children, adolescents, and adults navigating
-          life's challenges with a person-centered approach.
+        <p class="eyebrow">Services</p>
+        <h2>Healing is play. Listening is art. The rest is connection.</h2>
+        <p class="subtitle">
+          I offer tailored counseling through individual sessions and play
+          therapy for children, adolescents, and adults.
         </p>
-      </Card>
-      <Card>
-        <img
-          src="https://picsum.photos/seed/joanne-play-therapy/480/320"
-          alt="Play therapy placeholder image"
-          class="service-card-image"
-        />
-        <h3>Play Therapy</h3>
-        <p>
-          Therapeutic exploration through play, art, and creative expression to
-          help process emotions and build resilience.
-        </p>
-      </Card>
-    </div>
-
-    <div class="service-list">
-      <div>
-        <p class="specialization-intro">
-          I work with a wide range of concerns. Whether you're navigating
-          anxiety, life transitions, relationship challenges, or simply seeking
-          support for growth, I'm here to help. Some of the areas I specialize
-          in include:
-        </p>
-        <ul>
-          <li>
-            Anxiety, depression, life transitions, relocation, expat issues
-          </li>
-          <li>
-            Emotion regulation, self-esteem, identity development, relationships
-          </li>
-          <li>
-            Grief, stress management, ADHD, autism support, parenting, school
-            concerns
-          </li>
-          <li>
-            Bullying, social skills, mindfulness, cultural adaptation, LGBTQIA+
-            support
-          </li>
-        </ul>
       </div>
-    </div>
+
+      <div class="service-grid">
+        <Card>
+          <img
+            src="https://picsum.photos/seed/joanne-individual/480/320"
+            alt="Individual counseling placeholder image"
+            class="service-card-image"
+          />
+          <h3>Individual Counseling</h3>
+          <p>
+            One-on-one support for children, adolescents, and adults navigating
+            life's challenges with a person-centered approach.
+          </p>
+        </Card>
+        <Card>
+          <img
+            src="https://picsum.photos/seed/joanne-play-therapy/480/320"
+            alt="Play therapy placeholder image"
+            class="service-card-image"
+          />
+          <h3>Play Therapy</h3>
+          <p>
+            Therapeutic exploration through play, art, and creative expression
+            to help process emotions and build resilience.
+          </p>
+        </Card>
+      </div>
+
+      <div class="service-list">
+        <div>
+          <p class="specialization-intro">
+            I work with a wide range of concerns. Whether you're navigating
+            anxiety, life transitions, relationship challenges, or simply
+            seeking support for growth, I'm here to help. Some of the areas I
+            specialize in include:
+          </p>
+          <ul>
+            <li>
+              Anxiety, depression, life transitions, relocation, expat issues
+            </li>
+            <li>
+              Emotion regulation, self-esteem, identity development,
+              relationships
+            </li>
+            <li>
+              Grief, stress management, ADHD, autism support, parenting, school
+              concerns
+            </li>
+            <li>
+              Bullying, social skills, mindfulness, cultural adaptation,
+              LGBTQIA+ support
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 </template>

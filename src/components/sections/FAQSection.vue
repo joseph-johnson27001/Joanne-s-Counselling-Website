@@ -2,52 +2,52 @@
   <section id="faq" class="section-block faq-block">
     <div class="section-content">
       <div class="section-heading">
-      <p class="eyebrow">FAQ</p>
-      <h2>Questions families and clients often ask.</h2>
+        <p class="eyebrow">FAQ</p>
+        <h2>Questions families and clients often ask.</h2>
+      </div>
+
+      <div class="accordion-list">
+        <Accordion title="What is your approach to counseling?">
+          <p>
+            My person-centered approach means I create a supportive space where
+            you can share your story at your own pace. Healing often begins with
+            playful exploration, attentive listening, and building trust in our
+            connection.
+          </p>
+        </Accordion>
+
+        <Accordion title="How do I book an appointment?">
+          <p>
+            Email me at
+            <a href="mailto:joanneb.counselling@gmail.com" class="email-link"
+              >joanneb.counselling@gmail.com</a
+            >. A simple introduction is all that’s needed.
+          </p>
+        </Accordion>
+
+        <Accordion title="What age groups do you work with?">
+          <p>Children (4–18), adolescents, and adults.</p>
+        </Accordion>
+
+        <Accordion title="Do you offer online sessions?">
+          <p>Yes, in-person and online options are available.</p>
+        </Accordion>
+
+        <Accordion title="What is your cancellation policy?">
+          <p>
+            Please notify me at least 24 hours in advance to avoid session
+            charges.
+          </p>
+        </Accordion>
+
+        <Accordion title="Is parental consent required for minors?">
+          <p>
+            Yes, in Thailand, parental or legal guardian consent is required for
+            anyone under 20.
+          </p>
+        </Accordion>
+      </div>
     </div>
-
-    <div class="accordion-list">
-      <Accordion title="What is your approach to counseling?">
-        <p>
-          My person-centered approach means I create a supportive space where
-          you can share your story at your own pace. Healing often begins with
-          playful exploration, attentive listening, and building trust in our
-          connection.
-        </p>
-      </Accordion>
-
-      <Accordion title="How do I book an appointment?">
-        <p>
-          Email me at
-          <a href="mailto:joanneb.counselling@gmail.com" class="email-link"
-            >joanneb.counselling@gmail.com</a
-          >. A simple introduction is all that’s needed.
-        </p>
-      </Accordion>
-
-      <Accordion title="What age groups do you work with?">
-        <p>Children (4–18), adolescents, and adults.</p>
-      </Accordion>
-
-      <Accordion title="Do you offer online sessions?">
-        <p>Yes, in-person and online options are available.</p>
-      </Accordion>
-
-      <Accordion title="What is your cancellation policy?">
-        <p>
-          Please notify me at least 24 hours in advance to avoid session
-          charges.
-        </p>
-      </Accordion>
-
-      <Accordion title="Is parental consent required for minors?">
-        <p>
-          Yes, in Thailand, parental or legal guardian consent is required for
-          anyone under 20.
-        </p>
-      </Accordion>
-    </div>
-  </div>
   </section>
 </template>
 
