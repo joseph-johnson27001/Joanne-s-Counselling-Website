@@ -38,9 +38,9 @@
         aria-label="Primary site navigation"
       >
         <a href="#home" @click="closeMenu">Home</a>
-        <a href="#about" @click="closeMenu">About</a>
         <a href="#services" @click="closeMenu">Services</a>
         <a href="#faq" @click="closeMenu">FAQ</a>
+        <a href="#about" @click="closeMenu">About</a>
         <a href="#contact" @click="closeMenu">Contact</a>
       </nav>
     </div>

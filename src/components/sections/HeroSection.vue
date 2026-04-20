@@ -45,14 +45,14 @@ export default {
   gap: 12px;
   align-items: start;
   padding: 80px 40px !important;
-  scroll-margin-top: 80px;
+  scroll-margin-top: 75px;
   background: #fef9f5;
 }
 
 @media (max-width: 900px) {
   .hero-section {
     padding: 50px 20px !important;
-    scroll-margin-top: 50px;
+    scroll-margin-top: 70px;
   }
 }
 
