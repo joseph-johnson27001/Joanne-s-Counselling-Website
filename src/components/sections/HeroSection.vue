@@ -4,7 +4,7 @@
       <p class="eyebrow">
         Healing is play, listening is art, the rest is connection.
       </p>
-      <h1>Welcome to Joanne Counselling</h1>
+      <h1>Welcome!</h1>
       <p class="hero-text">
         Person-centered support for children, adolescents, and adults in Bangkok
         and online. Every healing journey is unique. Whether you or your child
@@ -46,6 +46,7 @@ export default {
   padding: 80px 40px !important;
   scroll-margin-top: 75px;
   background: #fef9f5;
+  width: 100%;
 }
 
 @media (max-width: 900px) {
@@ -89,8 +90,8 @@ h1 {
 }
 
 .hero-visual {
-  height: 500px;
-  width: 500px;
+  height: 450px;
+  width: 450px;
   overflow: hidden;
 }
 

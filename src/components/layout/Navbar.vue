@@ -2,7 +2,7 @@
   <header class="navbar">
     <div class="navbar-inner">
       <div class="brand">
-        <span>Joanne Counselling</span>
+        <span>Joanne Barnuevo</span>
       </div>
 
       <button
