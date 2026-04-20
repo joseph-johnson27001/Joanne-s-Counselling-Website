@@ -19,8 +19,8 @@
 
     <div class="hero-visual visual-container">
       <img
-        src="https://picsum.photos/seed/joanne-hero/720/520"
-        alt="Soft abstract illustration representing playful healing and connection"
+        src="@/assets/images/bike_image.jpeg"
+        alt="Joanne Barnuevo practicing self-care and wellness"
         class="image-fill"
       />
     </div>
@@ -89,7 +89,16 @@ h1 {
 }
 
 .hero-visual {
-  height: 400px;
+  height: 500px;
+  width: 500px;
+  overflow: hidden;
+}
+
+.hero-visual .image-fill {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+  object-position: bottom !important;
 }
 
 @media (min-width: 900px) {

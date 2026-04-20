@@ -38,8 +38,8 @@
 
       <div class="about-visual visual-container">
         <img
-          src="https://picsum.photos/seed/joanne-about/640/520"
-          alt="Portrait-style image placeholder representing Joanne's counseling background"
+          src="@/assets/images/Joanne_Cambodia.jpeg"
+          alt="Joanne Barnuevo, MSCP - Counselor"
           class="image-fill"
         />
       </div>
@@ -76,12 +76,23 @@ export default {
 }
 
 .about-visual {
-  min-height: 340px;
+  max-height: 450px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-visual .image-fill {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
 }
 
 @media (min-width: 900px) {
   .about-grid {
-    grid-template-columns: 1fr 0.9fr;
+    grid-template-columns: 2fr 1fr;
     gap: 52px;
   }
 }
