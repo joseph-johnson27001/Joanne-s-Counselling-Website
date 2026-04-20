@@ -4,45 +4,34 @@
       <p class="eyebrow">Services</p>
       <h2>Healing is play. Listening is art. The rest is connection.</h2>
       <p class="subtitle">
-        I offer counseling for children, adolescents, and adults with a
-        person-centered, integrative approach.
+        I offer tailored counseling through individual sessions and play therapy
+        for children, adolescents, and adults.
       </p>
     </div>
 
     <div class="service-grid">
       <Card>
         <img
-          src="https://picsum.photos/seed/joanne-children/480/320"
-          alt="Children's counseling placeholder image"
+          src="https://picsum.photos/seed/joanne-individual/480/320"
+          alt="Individual counseling placeholder image"
           class="service-card-image"
         />
-        <h3>Children (ages 4–18)</h3>
+        <h3>Individual Counseling</h3>
         <p>
-          Support for school issues, anxiety, emotion regulation, and social
-          skills.
+          One-on-one support for children, adolescents, and adults navigating
+          life's challenges with a person-centered approach.
         </p>
       </Card>
       <Card>
         <img
-          src="https://picsum.photos/seed/joanne-adolescents/480/320"
-          alt="Adolescents counseling placeholder image"
+          src="https://picsum.photos/seed/joanne-play-therapy/480/320"
+          alt="Play therapy placeholder image"
           class="service-card-image"
         />
-        <h3>Adolescents</h3>
+        <h3>Play Therapy</h3>
         <p>
-          Guidance through identity, relationships, stress, and transitions.
-        </p>
-      </Card>
-      <Card>
-        <img
-          src="https://picsum.photos/seed/joanne-adults/480/320"
-          alt="Adults counseling placeholder image"
-          class="service-card-image"
-        />
-        <h3>Adults</h3>
-        <p>
-          Individual support for life changes, grief, self-esteem, and expat
-          challenges.
+          Therapeutic exploration through play, art, and creative expression to
+          help process emotions and build resilience.
         </p>
       </Card>
     </div>
@@ -141,7 +130,7 @@ export default {
 
 @media (min-width: 760px) {
   .service-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .service-list {
