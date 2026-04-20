@@ -59,13 +59,11 @@ export default {
   grid-template-columns: 3fr 2fr;
   gap: 12px;
   align-items: center;
-  padding: 60px 40px;
 }
 
 @media (max-width: 900px) {
   .hero-content {
     grid-template-columns: 1fr;
-    padding: 20px 0px;
     gap: 24px;
     align-items: start;
   }

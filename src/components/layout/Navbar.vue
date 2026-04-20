@@ -68,9 +68,6 @@ export default {
 
 <style scoped>
 .navbar {
-  position: sticky;
-  top: 0;
-  z-index: 20;
   width: 100%;
   background: #4f6a49;
   backdrop-filter: blur(12px);
