@@ -44,7 +44,7 @@ export default {
 }
 
 .page-shell {
-  max-width: 1120px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0 24px 72px;
 }

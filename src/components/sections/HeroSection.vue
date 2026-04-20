@@ -41,9 +41,9 @@ export default {
 <style scoped>
 .hero-section {
   display: grid;
-  gap: 32px;
+  gap: 12px;
   align-items: center;
-  padding: 60px 0 40px;
+  padding: 40px 0 40px;
 }
 
 .eyebrow {
@@ -98,7 +98,8 @@ h1 {
 
 @media (min-width: 900px) {
   .hero-section {
-    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 14px;
   }
 }
 </style>
