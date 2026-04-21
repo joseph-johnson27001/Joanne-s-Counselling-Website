@@ -42,11 +42,11 @@ export default {
   components: {
     Button,
   },
-  // mounted() {
-  //   if (this.$refs.heroVideo) {
-  //     this.$refs.heroVideo.playbackRate = 0.4;
-  //   }
-  // },
+  mounted() {
+    if (this.$refs.heroVideo) {
+      this.$refs.heroVideo.playbackRate = 0.5;
+    }
+  },
 };
 </script>
 
