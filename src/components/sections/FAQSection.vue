@@ -22,33 +22,19 @@
 
         <Accordion title="How do I book an appointment?">
           <p>
-            Email me at
+            You can reach me by sending an email to
             <a href="mailto:joanneb.counselling@gmail.com" class="email-link"
               >joanneb.counselling@gmail.com</a
-            >. A simple introduction is all that’s needed.
+            >. A simple introduction is all that's needed.
           </p>
         </Accordion>
 
         <Accordion title="What age groups do you work with?">
-          <p>Children (4–18), adolescents, and adults.</p>
+          <p>Children (ages 4+), adolescents, and adults.</p>
         </Accordion>
 
         <Accordion title="Do you offer online sessions?">
           <p>Yes, in-person and online options are available.</p>
-        </Accordion>
-
-        <Accordion title="What is your cancellation policy?">
-          <p>
-            Please notify me at least 24 hours in advance to avoid session
-            charges.
-          </p>
-        </Accordion>
-
-        <Accordion title="Is parental consent required for minors?">
-          <p>
-            Yes, in Thailand, parental or legal guardian consent is required for
-            anyone under 20.
-          </p>
         </Accordion>
       </div>
     </div>

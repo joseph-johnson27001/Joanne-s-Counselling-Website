@@ -14,7 +14,7 @@
         </p>
       </div>
 
-      <div class="contact-grid">
+      <!-- <div class="contact-grid">
         <div class="contact-card">
           <h3>Appointment</h3>
           <p>
@@ -29,7 +29,7 @@
           <h3>Age</h3>
           <p>Children (age 4+), adolescents, and adults.</p>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>

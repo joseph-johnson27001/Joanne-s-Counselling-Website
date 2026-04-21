@@ -3,11 +3,11 @@
     <div class="section-content">
       <div class="section-heading">
         <p class="eyebrow">About</p>
-        <h2>Joanne Barnuevo, MSCP</h2>
-        <p class="subtitle">
+        <h2>Joanne Barnuevo</h2>
+        <!-- <p class="subtitle">
           Counselor | Person-Centered | Integrative | Therapeutic Play Skills
           (PTUK/PTI)
-        </p>
+        </p> -->
       </div>
 
       <div class="about-grid">
