@@ -83,6 +83,8 @@ export default {
   justify-content: center;
   padding-top: 0px;
   padding-bottom: 0px;
+  position: relative;
+  z-index: 50;
 }
 
 .navbar-inner {
@@ -177,7 +179,7 @@ export default {
     padding: 20px 20px;
     border-radius: 0;
     background: whitesmoke;
-    border-bottom: 1px solid #8fa87a;
+    border-bottom: 1px solid #6b7099;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
     z-index: 25;
   }
@@ -189,7 +191,7 @@ export default {
   .nav-links a {
     width: 100%;
     padding: 12px 0;
-    color: #8fa87a;
+    color: #6b7099;
     border-bottom: 1px solid #d4d0cc;
     position: relative;
   }
@@ -201,14 +203,14 @@ export default {
     left: 0;
     right: 0;
     height: 2px;
-    background: #8fa87a;
+    background: #6b7099;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease;
   }
 
   .nav-links a:hover {
-    color: #8fa87a;
+    color: #6b7099;
   }
 
   .nav-links a:hover::after {
