@@ -20,6 +20,10 @@
           </p>
         </Accordion>
 
+        <Accordion title="What age groups do you work with?">
+          <p>Children (ages 4+), adolescents, and adults.</p>
+        </Accordion>
+
         <Accordion title="How do I book an appointment?">
           <p>
             You can reach me by sending an email to
@@ -27,10 +31,6 @@
               >joanneb.counselling@gmail.com</a
             >. A simple introduction is all that's needed.
           </p>
-        </Accordion>
-
-        <Accordion title="What age groups do you work with?">
-          <p>Children (ages 4+), adolescents, and adults.</p>
         </Accordion>
 
         <Accordion title="Do you offer online sessions?">
