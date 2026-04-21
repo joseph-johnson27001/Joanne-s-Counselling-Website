@@ -2,7 +2,7 @@
   <section id="home" class="section-block hero-block">
     <video ref="heroVideo" class="hero-video" autoplay muted loop playsinline>
       <source
-        src="https://video.wixstatic.com/video/11062b_6ec38afbe78f4fbdbdb799c40dd5993f/1080p/mp4/file.mp4"
+        src="https://cdn.pixabay.com/video/2020/09/01/48770-456522652_large.mp4"
         type="video/mp4"
       />
       Your browser does not support the video tag.
