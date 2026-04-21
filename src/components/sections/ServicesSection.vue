@@ -18,8 +18,8 @@
       <div class="service-grid">
         <Card>
           <img
-            src="https://picsum.photos/seed/joanne-individual/480/320"
-            alt="Individual counselling placeholder image"
+            :src="chairImage"
+            alt="Comfortable chair for individual counselling"
             class="service-card-image"
           />
           <h3>Counselling</h3>
@@ -47,11 +47,17 @@
 
 <script>
 import Card from "@/components/ui/Card.vue";
+import chairImage from "@/assets/images/chair.jpg";
 
 export default {
   name: "ServicesSection",
   components: {
     Card,
+  },
+  data() {
+    return {
+      chairImage,
+    };
   },
 };
 </script>
