@@ -171,5 +171,9 @@ h1 {
     width: 100%;
     margin-bottom: 20px;
   }
+
+  h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+  }
 }
 </style>
