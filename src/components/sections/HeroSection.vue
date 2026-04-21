@@ -2,7 +2,7 @@
   <section id="home" class="section-block hero-block">
     <video ref="heroVideo" class="hero-video" autoplay muted loop playsinline>
       <source
-        src="https://cdn.pixabay.com/video/2020/09/01/48770-456522652_large.mp4"
+        src="https://cdn.pixabay.com/video/2020/09/01/48770-456522652_medium.mp4"
         type="video/mp4"
       />
       Your browser does not support the video tag.
@@ -42,11 +42,11 @@ export default {
   components: {
     Button,
   },
-  mounted() {
-    if (this.$refs.heroVideo) {
-      this.$refs.heroVideo.playbackRate = 0.5;
-    }
-  },
+  // mounted() {
+  //   if (this.$refs.heroVideo) {
+  //     this.$refs.heroVideo.playbackRate = 0.5;
+  //   }
+  // },
 };
 </script>
 
