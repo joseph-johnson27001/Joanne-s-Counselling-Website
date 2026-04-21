@@ -42,11 +42,24 @@ export default {
   components: {
     Button,
   },
-  // mounted() {
-  //   if (this.$refs.heroVideo) {
-  //     this.$refs.heroVideo.playbackRate = 0.5;
-  //   }
-  // },
+  mounted() {
+    if (this.$refs.heroVideo) {
+      // Ensure video plays on mount
+      const playPromise = this.$refs.heroVideo.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // Autoplay prevented, this is expected on some iOS versions
+        });
+      }
+
+      // Resume playback when page becomes visible
+      document.addEventListener("visibilitychange", () => {
+        if (!document.hidden && this.$refs.heroVideo) {
+          this.$refs.heroVideo.play();
+        }
+      });
+    }
+  },
 };
 </script>
 
