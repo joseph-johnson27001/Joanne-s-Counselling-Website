@@ -11,20 +11,15 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Alex+Brush&family=Allura&display=swap");
+
 html,
 body {
   margin: 0;
   padding: 0;
   min-height: 100%;
   background: #f5e9e2;
-  font-family:
-    "Open Sans",
-    ui-sans-serif,
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #2f2a24;
   scroll-behavior: smooth;
 }

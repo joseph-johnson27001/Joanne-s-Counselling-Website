@@ -37,11 +37,11 @@
         :class="{ open: menuOpen }"
         aria-label="Primary site navigation"
       >
-        <a href="#home" @click="closeMenu">Home</a>
-        <a href="#services" @click="closeMenu">Services</a>
-        <a href="#faq" @click="closeMenu">FAQ</a>
-        <a href="#about" @click="closeMenu">About</a>
-        <a href="#contact" @click="closeMenu">Contact</a>
+        <a @click.prevent="scrollToSection('home')">Home</a>
+        <a @click.prevent="scrollToSection('services')">Services</a>
+        <a @click.prevent="scrollToSection('faq')">FAQ</a>
+        <a @click.prevent="scrollToSection('about')">About</a>
+        <a @click.prevent="scrollToSection('contact')">Contact</a>
       </nav>
     </div>
   </header>
@@ -62,6 +62,13 @@ export default {
     closeMenu() {
       this.menuOpen = false;
     },
+    scrollToSection(sectionId) {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+      this.closeMenu();
+    },
   },
 };
 </script>
@@ -69,9 +76,9 @@ export default {
 <style scoped>
 .navbar {
   width: 100%;
-  background: #4f6a49;
+  background: #597355;
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid #fff;
   display: flex;
   justify-content: center;
   padding-top: 0px;
@@ -93,8 +100,8 @@ export default {
   display: inline-flex;
   font-weight: 400;
   color: #faf7f3;
-  font-family: "Euphoria Script", cursive;
-  font-size: 2rem;
+  font-family: "Allura", cursive;
+  font-size: 2.245rem;
   line-height: 1.05;
 }
 
@@ -127,8 +134,9 @@ export default {
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
   position: relative;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: capitalize;
+  cursor: pointer;
 }
 
 .nav-links a::after {
