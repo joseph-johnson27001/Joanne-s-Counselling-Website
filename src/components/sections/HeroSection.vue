@@ -2,7 +2,7 @@
   <section id="home" class="section-block hero-block">
     <video ref="heroVideo" class="hero-video" autoplay muted loop playsinline>
       <source
-        src="https://cdn.pixabay.com/video/2017/02/28/8010-206142991_large.mp4"
+        src="https://cdn.pixabay.com/video/2023/07/17/171879-846103510_large.mp4"
         type="video/mp4"
       />
       Your browser does not support the video tag.
@@ -19,7 +19,7 @@
             certain kind of counselling or are simply looking for a space to see
             what feels right for you, I'm glad you're here.
           </p>
-          <p class="hero-tex">
+          <p class="hero-text">
             My practice is grounded in attentive listening, creative activities,
             and genuine connection—offering a safe environment where you can
             feel supported, grow, and connect in your own way and at your own
@@ -74,7 +74,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
   z-index: 2;
   pointer-events: none;
 }
