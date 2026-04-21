@@ -95,7 +95,7 @@ export default {
   gap: 1rem;
   max-width: 1400px;
   width: 100%;
-  padding: 20px 0px;
+  padding: 15px 0px;
 }
 
 .brand {
