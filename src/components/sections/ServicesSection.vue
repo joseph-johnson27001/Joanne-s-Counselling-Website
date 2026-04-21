@@ -22,7 +22,7 @@
             alt="Individual counselling placeholder image"
             class="service-card-image"
           />
-          <h3>Individual Counselling</h3>
+          <h3>Counselling</h3>
           <p>
             One-on-one support for children, adolescents, and adults navigating
             life's challenges with a person-centered approach.

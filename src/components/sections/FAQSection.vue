@@ -3,7 +3,7 @@
     <div class="section-content">
       <div class="section-heading">
         <p class="eyebrow">FAQ</p>
-        <h2>Questions families and clients often ask.</h2>
+        <h2>Questions clients and families often ask.</h2>
       </div>
 
       <div class="accordion-list">
