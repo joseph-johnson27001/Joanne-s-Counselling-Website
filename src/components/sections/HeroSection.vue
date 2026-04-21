@@ -133,6 +133,8 @@ h1 {
   line-height: 1.1;
   letter-spacing: -0.01em;
   color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
 .hero-text {
