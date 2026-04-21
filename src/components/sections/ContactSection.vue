@@ -9,7 +9,7 @@
           <a href="mailto:joanneb.counselling@gmail.com" class="email-link"
             >joanneb.counselling@gmail.com</a
           >
-          with a brief introduction and what you’d like to share in counseling.
+          with a brief introduction and what you’d like to share in counselling.
           I’ll respond with next steps and available times.
         </p>
       </div>

@@ -5,19 +5,28 @@
         <p class="eyebrow">Services</p>
         <!-- <h2>Healing is play. Listening is art. The rest is connection.</h2> -->
         <!-- <p class="subtitle">
-          I offer tailored counseling through individual sessions and play
+          I offer tailored counselling through individual sessions and play
           therapy for children, adolescents, and adults.
         </p> -->
+      </div>
+      <div class="service-list">
+        <div>
+          <p class="specialization-intro">
+            I work with a wide range of concerns. Whether you're navigating
+            anxiety, life transitions, relationship challenges, or simply
+            seeking support for growth, I'm here to help.
+          </p>
+        </div>
       </div>
 
       <div class="service-grid">
         <Card>
           <img
             src="https://picsum.photos/seed/joanne-individual/480/320"
-            alt="Individual counseling placeholder image"
+            alt="Individual counselling placeholder image"
             class="service-card-image"
           />
-          <h3>Individual Counseling</h3>
+          <h3>Individual Counselling</h3>
           <p>
             One-on-one support for children, adolescents, and adults navigating
             life's challenges with a person-centered approach.
@@ -35,16 +44,6 @@
             to help process emotions and build resilience.
           </p>
         </Card>
-      </div>
-
-      <div class="service-list">
-        <div>
-          <p class="specialization-intro">
-            I work with a wide range of concerns. Whether you're navigating
-            anxiety, life transitions, relationship challenges, or simply
-            seeking support for growth, I'm here to help.
-          </p>
-        </div>
       </div>
     </div>
   </section>

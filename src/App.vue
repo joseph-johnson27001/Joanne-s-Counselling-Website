@@ -41,6 +41,12 @@ h6 {
   font-family: "Playfair Display", serif;
 }
 
+p {
+  margin: 0 0 32px 0;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
 a {
   color: inherit;
   transition: color 0.2s ease;

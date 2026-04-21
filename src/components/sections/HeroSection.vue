@@ -142,10 +142,6 @@ h1 {
   color: white;
 }
 
-.hero-tex {
-  color: white;
-}
-
 .hero-actions {
   display: flex;
   flex-wrap: wrap;

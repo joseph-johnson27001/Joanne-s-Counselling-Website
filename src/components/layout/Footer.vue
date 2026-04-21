@@ -2,9 +2,9 @@
   <footer class="section-block site-footer">
     <div class="footer-content">
       <div>
-        <p>Joanne Barnuevo Counselling</p>
+        <p>Joanne Barnuevo</p>
         <p>
-          Supporting children, adolescents, and adults in Bangkok and online.
+          Supporting children, adolescents, and adults in-person and online.
         </p>
       </div>
       <div>

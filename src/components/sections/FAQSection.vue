@@ -7,7 +7,7 @@
       </div>
 
       <div class="accordion-list">
-        <Accordion title="What is your approach to counseling?">
+        <Accordion title="What is your approach to counselling?">
           <p>
             My approach to counselling is person-centred and integrative. During
             sessions, we focus on understanding unique experiences, needs, and
