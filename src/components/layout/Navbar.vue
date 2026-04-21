@@ -76,7 +76,7 @@ export default {
 <style scoped>
 .navbar {
   width: 100%;
-  background: #597355;
+  background: linear-gradient(135deg, #585e86 0%, #5a5e87 100%);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid #fff;
   display: flex;

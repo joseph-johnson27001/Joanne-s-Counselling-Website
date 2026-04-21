@@ -2,7 +2,7 @@
   <section id="home" class="section-block hero-block">
     <video ref="heroVideo" class="hero-video" autoplay muted loop playsinline>
       <source
-        src="https://cdn.pixabay.com/video/2023/07/17/171879-846103510_large.mp4"
+        src="https://cdn.pixabay.com/video/2020/09/01/48770-456522652_large.mp4"
         type="video/mp4"
       />
       Your browser does not support the video tag.
@@ -74,7 +74,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.3);
   z-index: 2;
   pointer-events: none;
 }
@@ -155,7 +155,7 @@ h1 {
 }
 
 .hero-actions :deep(.button) {
-  background: #7a5861;
+  background: #585e86;
   color: white;
   border: 1px solid #fff;
   font-weight: 400;
