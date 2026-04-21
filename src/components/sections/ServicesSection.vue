@@ -30,8 +30,8 @@
         </Card>
         <Card>
           <img
-            src="https://picsum.photos/seed/joanne-play-therapy/480/320"
-            alt="Play therapy placeholder image"
+            :src="playTherapyImage"
+            alt="Play therapy for children"
             class="service-card-image"
           />
           <h3>Play Therapy</h3>
@@ -48,6 +48,7 @@
 <script>
 import Card from "@/components/ui/Card.vue";
 import chairImage from "@/assets/images/chair.jpg";
+import playTherapyImage from "@/assets/images/play_therapy.jpg";
 
 export default {
   name: "ServicesSection",
@@ -57,6 +58,7 @@ export default {
   data() {
     return {
       chairImage,
+      playTherapyImage,
     };
   },
 };
