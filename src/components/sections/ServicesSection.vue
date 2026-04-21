@@ -8,15 +8,11 @@
           I offer tailored counselling through individual sessions and play
           therapy for children, adolescents, and adults.
         </p> -->
-      </div>
-      <div class="service-list">
-        <div>
-          <p class="specialization-intro">
-            I work with a wide range of concerns. Whether you're navigating
-            anxiety, life transitions, relationship challenges, or simply
-            seeking support for growth, I'm here to help.
-          </p>
-        </div>
+        <p>
+          I work with a wide range of concerns. Whether you're navigating
+          anxiety, life transitions, relationship challenges, or simply seeking
+          support for growth, I'm here to help.
+        </p>
       </div>
 
       <div class="service-grid">
