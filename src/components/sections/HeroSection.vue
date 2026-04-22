@@ -169,7 +169,7 @@ h1 {
 }
 
 .hero-actions :deep(.button) {
-  background: #d5ced1;
+  background: #dad5d7;
   color: #444;
   border: none;
   font-weight: 500;
