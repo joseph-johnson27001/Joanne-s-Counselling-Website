@@ -74,6 +74,7 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: cover;
+
   z-index: 1;
 }
 
@@ -128,13 +129,17 @@ export default {
     gap: 24px;
     align-items: start;
   }
+
+  .hero-video {
+    object-position: 20% bottom;
+  }
 }
 
 .eyebrow {
   margin: 0 0 24px;
   font-size: 0.8rem;
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
@@ -153,7 +158,7 @@ h1 {
   line-height: 1.8;
   font-size: 1.05rem;
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-actions {
