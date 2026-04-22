@@ -5,8 +5,8 @@
     <main class="page-shell">
       <HeroSection />
       <ServicesSection />
-      <FAQSection />
       <AboutSection />
+      <FAQSection />
       <ContactSection />
     </main>
 

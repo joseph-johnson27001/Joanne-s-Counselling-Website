@@ -39,8 +39,8 @@
       >
         <a @click.prevent="scrollToSection('home')">Home</a>
         <a @click.prevent="scrollToSection('services')">Services</a>
-        <a @click.prevent="scrollToSection('faq')">FAQ</a>
         <a @click.prevent="scrollToSection('about')">About</a>
+        <a @click.prevent="scrollToSection('faq')">FAQ</a>
         <a @click.prevent="scrollToSection('contact')">Contact</a>
       </nav>
     </div>
