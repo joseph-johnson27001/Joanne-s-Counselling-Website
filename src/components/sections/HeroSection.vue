@@ -23,7 +23,7 @@
             pace.
           </p>
           <div class="hero-actions">
-            <Button href="#contact">Book a consultation</Button>
+            <Button href="#contact">Get in touch</Button>
           </div>
         </div>
       </div>
