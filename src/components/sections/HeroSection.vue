@@ -87,7 +87,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.25);
   z-index: 2;
   pointer-events: none;
 }
@@ -166,9 +166,9 @@ h1 {
 }
 
 .hero-actions :deep(.button) {
-  background: #585e86;
-  color: white;
-  border: 1px solid #fff;
+  background: #b9acb2;
+  color: #222;
+  border: none;
   font-weight: 400;
 }
 

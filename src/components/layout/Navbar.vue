@@ -76,9 +76,9 @@ export default {
 <style scoped>
 .navbar {
   width: 100%;
-  background: linear-gradient(135deg, #585e86 0%, #5a5e87 100%);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid #fff;
+  background: #797482;
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #555;
   display: flex;
   justify-content: center;
   padding-top: 0px;
@@ -179,7 +179,7 @@ export default {
     padding: 20px 20px;
     border-radius: 0;
     background: whitesmoke;
-    border-bottom: 1px solid #6b7099;
+    border-bottom: 1px solid #797482;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
     z-index: 25;
   }
@@ -205,7 +205,7 @@ export default {
     left: 0;
     right: 0;
     height: 2px;
-    background: #6b7099;
+    background: #797482;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease;
