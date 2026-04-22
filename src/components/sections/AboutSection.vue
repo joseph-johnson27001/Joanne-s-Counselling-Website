@@ -88,7 +88,7 @@ export default {
   display: grid;
   gap: 48px;
   margin-top: 0;
-  align-items: center;
+  align-items: start;
 }
 
 .about-copy p {
@@ -103,11 +103,13 @@ export default {
 }
 
 .about-visual {
-  max-height: 450px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  aspect-ratio: 1;
+  max-height: 500px;
+  margin: 0 auto;
 }
 
 .about-visual .image-fill {
@@ -117,9 +119,17 @@ export default {
   object-position: bottom;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
+  .about-visual {
+    aspect-ratio: auto;
+    max-height: none;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
   .about-grid {
-    grid-template-columns: 5fr 3fr;
+    grid-template-columns: 2fr 1fr;
     gap: 30px;
   }
 }
