@@ -78,7 +78,7 @@ export default {
   width: 100%;
   background: #797482;
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #000;
   display: flex;
   justify-content: center;
   padding-top: 0px;
@@ -159,6 +159,10 @@ export default {
 }
 
 @media (max-width: 820px) {
+  .navbar {
+    border-bottom: 1px solid #fff;
+  }
+
   .brand {
     font-size: 1.8rem;
   }
