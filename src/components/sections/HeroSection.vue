@@ -87,7 +87,6 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.1);
   z-index: 2;
   pointer-events: none;
 }
@@ -138,6 +137,7 @@ export default {
   margin: 0 0 24px;
   font-size: 0.8rem;
   color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
@@ -148,6 +148,7 @@ h1 {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 .hero-text {
@@ -155,6 +156,7 @@ h1 {
   line-height: 1.8;
   font-size: 1.05rem;
   color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-actions {
