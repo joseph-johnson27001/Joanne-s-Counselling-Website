@@ -76,7 +76,7 @@ export default {
 <style scoped>
 .navbar {
   width: 100%;
-  background: #7474ac;
+  background: #797482;
   backdrop-filter: blur(6px);
   border-bottom: 1px solid #fff;
   display: flex;
