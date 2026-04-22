@@ -131,7 +131,7 @@ export default {
   }
 
   .hero-video {
-    object-position: 20% bottom;
+    object-position: 35% bottom;
   }
 }
 
