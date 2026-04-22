@@ -191,10 +191,11 @@ export default {
   .nav-links a {
     width: 100%;
     padding: 12px 0;
-    color: #6b7099;
+    color: #444;
     border-bottom: 1px solid #d4d0cc;
     position: relative;
     transition: color 0.3s ease;
+    font-weight: 400;
   }
 
   .nav-links a::after {
@@ -209,10 +210,6 @@ export default {
     transform-origin: left;
     transition: transform 0.3s ease;
     z-index: 1;
-  }
-
-  .nav-links a:hover {
-    color: #6b7099;
   }
 
   .nav-links a:hover::after {
