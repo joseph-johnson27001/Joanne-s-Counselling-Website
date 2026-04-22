@@ -202,7 +202,7 @@ export default {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 2px;
+    height: 1px;
     background: #6b7099;
     transform: scaleX(0);
     transform-origin: left;
