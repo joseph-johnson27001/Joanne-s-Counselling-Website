@@ -1,10 +1,7 @@
 <template>
   <section id="home" class="section-block hero-block">
     <video ref="heroVideo" class="hero-video" autoplay muted loop playsinline>
-      <source
-        src="https://cdn.pixabay.com/video/2020/09/01/48770-456522652_medium.mp4"
-        type="video/mp4"
-      />
+      <source src="@/assets/videos/grass-boomerang.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
     <div class="section-content">
