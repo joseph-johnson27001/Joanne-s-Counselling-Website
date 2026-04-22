@@ -169,10 +169,10 @@ h1 {
 }
 
 .hero-actions :deep(.button) {
-  background: #b9acb2;
-  color: #222;
+  background: #d5ced1;
+  color: #444;
   border: none;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .hero-visual .image-fill {
