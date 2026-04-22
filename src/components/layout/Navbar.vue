@@ -103,7 +103,7 @@ export default {
   font-weight: 400;
   color: #faf7f3;
   font-family: "Allura", cursive;
-  font-size: 2.245rem;
+  font-size: 2rem;
   line-height: 1.05;
 }
 
