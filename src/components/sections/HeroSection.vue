@@ -134,7 +134,7 @@ export default {
   margin: 0 0 24px;
   font-size: 0.8rem;
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 h1 {
@@ -153,7 +153,7 @@ h1 {
   line-height: 1.8;
   font-size: 1.05rem;
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero-actions {
