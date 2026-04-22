@@ -78,7 +78,7 @@ export default {
   width: 100%;
   background: #797482;
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid #fff;
   display: flex;
   justify-content: center;
   padding-top: 0px;
