@@ -59,7 +59,7 @@ export default {
 
 .accordion-list {
   display: grid;
-  gap: 24px;
+  gap: 4px;
   margin-top: 0;
 }
 

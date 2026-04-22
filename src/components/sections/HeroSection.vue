@@ -103,7 +103,7 @@ export default {
 
 .hero-copy {
   opacity: 0;
-  animation: fadeInUp 1.2s linear forwards;
+  animation: fadeInUp 0.8s ease-out forwards;
   animation-delay: 0.2s;
 }
 
