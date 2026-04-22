@@ -129,9 +129,9 @@ export default {
 }
 
 .nav-links a {
-  color: whitesmoke;
+  color: #fff;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1rem;
   letter-spacing: 0.5px;
   transition: all 0.3s ease;

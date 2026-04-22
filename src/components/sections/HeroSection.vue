@@ -157,7 +157,7 @@ h1 {
   line-height: 1.8;
   font-size: 1.05rem;
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-actions {
