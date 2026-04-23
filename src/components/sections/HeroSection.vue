@@ -1,6 +1,17 @@
 <template>
   <section id="home" class="section-block hero-block">
-    <video ref="heroVideo" class="hero-video" autoplay muted loop playsinline>
+    <LoadingSpinner :isLoading="isVideoLoading" />
+    <video
+      ref="heroVideo"
+      class="hero-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      @loadstart="onVideoLoadStart"
+      @canplay="onVideoCanPlay"
+      @play="onVideoPlay"
+    >
       <source src="@/assets/videos/grass-boomerang.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
@@ -33,11 +44,29 @@
 
 <script>
 import Button from "@/components/ui/Button.vue";
+import LoadingSpinner from "@/components/ui/LoadingSpinner.vue";
 
 export default {
   name: "HeroSection",
   components: {
     Button,
+    LoadingSpinner,
+  },
+  data() {
+    return {
+      isVideoLoading: true,
+    };
+  },
+  methods: {
+    onVideoLoadStart() {
+      this.isVideoLoading = true;
+    },
+    onVideoCanPlay() {
+      this.isVideoLoading = false;
+    },
+    onVideoPlay() {
+      this.isVideoLoading = false;
+    },
   },
   mounted() {
     if (this.$refs.heroVideo) {
