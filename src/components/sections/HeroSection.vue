@@ -130,7 +130,7 @@ export default {
 .hero-copy {
   opacity: 0;
   animation: fadeInUp 0.8s ease-out forwards;
-  animation-delay: 0.2s;
+  animation-delay: 0.4s;
 }
 
 @keyframes fadeInUp {
