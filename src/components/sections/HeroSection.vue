@@ -17,7 +17,7 @@
     </video>
     <div class="section-content">
       <div class="hero-content">
-        <div class="hero-copy">
+        <div class="hero-copy" :class="{ 'animate-in': !isVideoLoading }">
           <p class="eyebrow">
             Healing is play, listening is art, the rest is connection.
           </p>
@@ -129,8 +129,11 @@ export default {
 
 .hero-copy {
   opacity: 0;
+}
+
+.hero-copy.animate-in {
   animation: fadeInUp 0.8s ease-out forwards;
-  animation-delay: 0.4s;
+  animation-delay: 0.25s;
 }
 
 @keyframes fadeInUp {
