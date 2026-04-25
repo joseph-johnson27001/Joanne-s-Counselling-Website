@@ -62,15 +62,15 @@ export default {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  color: #2f2a24;
+  color: #6a517d;
   font-size: 0.95rem;
   letter-spacing: 0.2px;
   transition: all 0.3s ease;
 }
-
+/* 
 .summary:hover {
   color: #6d9370;
-}
+} */
 
 .icon {
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
