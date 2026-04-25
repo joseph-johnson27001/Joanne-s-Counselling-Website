@@ -62,7 +62,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  color: #6a517d;
+  color: #593f6e;
   font-size: 0.95rem;
   letter-spacing: 0.2px;
   transition: all 0.3s ease;
@@ -86,7 +86,6 @@ export default {
   padding: 0 24px 20px 24px;
   line-height: 1.8;
   color: #4a493f;
-  animation: slideDown 0.3s ease forwards;
 }
 
 @keyframes slideDown {
