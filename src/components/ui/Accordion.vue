@@ -62,7 +62,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  color: #593f6e;
+  color: rgb(47, 42, 36);
   font-size: 0.95rem;
   letter-spacing: 0.2px;
   transition: all 0.3s ease;
