@@ -57,7 +57,7 @@ export default {
   padding: 20px 24px;
   border: none;
   background: transparent;
-  font-weight: 700;
+  font-weight: 600;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,7 +74,7 @@ export default {
 
 .icon {
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  color: #6d9370;
+  color: #6a517d;
   font-size: 1.2rem;
 }
 
