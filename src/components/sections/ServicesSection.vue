@@ -3,6 +3,7 @@
     <div class="section-content">
       <div class="section-heading">
         <p class="eyebrow">Services</p>
+        <h2>Online & In-Person Sessions</h2>
       </div>
 
       <div class="service-grid">

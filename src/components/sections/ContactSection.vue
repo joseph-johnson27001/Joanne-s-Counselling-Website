@@ -3,7 +3,7 @@
     <div class="section-content">
       <div class="section-heading">
         <p class="eyebrow">Contact</p>
-        <h2>Ready to connect?</h2>
+        <h2>Ready To Connect?</h2>
         <p class="subtitle">
           Booking is simple. Send a message to
           <a href="mailto:joanneb.counselling@gmail.com" class="email-link"
