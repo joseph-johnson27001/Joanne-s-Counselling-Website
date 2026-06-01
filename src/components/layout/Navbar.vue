@@ -2,7 +2,11 @@
   <header class="section-block navbar">
     <div class="navbar-inner">
       <div class="brand">
-        <span>Joanne Barnuevo</span>
+        <img
+          src="@/assets/images/jb_icon_white.png"
+          alt="Joanne Barnuevo Logo"
+          class="logo"
+        />
       </div>
 
       <button
@@ -100,11 +104,18 @@ export default {
 
 .brand {
   display: inline-flex;
+  align-items: center;
   font-weight: 400;
   color: #faf7f3;
   font-family: "Allura", cursive;
   font-size: 2rem;
   line-height: 1.05;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
 }
 
 .menu-toggle {
