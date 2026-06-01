@@ -150,7 +150,7 @@ export default {
 
 .card-heading-with-chip {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 10px;
   margin-bottom: 12px;
 }
@@ -163,11 +163,12 @@ export default {
   display: inline-block;
   background: whitesmoke;
   color: #444;
-  padding: 4px 12px;
+  padding: 6px 12px;
   border-radius: 20px;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.5px;
+  height: fit-content;
   text-transform: uppercase;
 }
 
