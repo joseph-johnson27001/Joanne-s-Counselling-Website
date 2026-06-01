@@ -27,6 +27,12 @@
             certain kind of counselling or are simply looking for a space to see
             what feels right for you, I'm glad you're here.
           </p>
+          <p class="hero-text">
+            My practice is grounded in attentive listening, creative activities,
+            and genuine connection, offering a safe environment where you can
+            feel supported, grow, and connect in your own way and at your own
+            pace.
+          </p>
           <div class="hero-actions">
             <Button href="#contact">Get in touch</Button>
           </div>

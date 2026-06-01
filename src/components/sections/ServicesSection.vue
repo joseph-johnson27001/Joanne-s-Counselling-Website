@@ -3,16 +3,6 @@
     <div class="section-content">
       <div class="section-heading">
         <p class="eyebrow">Services</p>
-        <!-- <h2>Healing is play. Listening is art. The rest is connection.</h2> -->
-        <!-- <p class="subtitle">
-          I offer tailored counselling through individual sessions and play
-          therapy for children, adolescents, and adults.
-        </p> -->
-        <p>
-          I work with a wide range of concerns. Whether you're navigating
-          anxiety, life transitions, relationship challenges, or simply seeking
-          support for growth, I'm here to help.
-        </p>
       </div>
 
       <div class="service-grid">
@@ -34,12 +24,55 @@
             alt="Play therapy for children"
             class="service-card-image"
           />
-          <h3>Play Therapy</h3>
+          <div class="card-heading-with-chip">
+            <h3>Play Therapy</h3>
+            <span class="chip">In training</span>
+          </div>
           <p>
             Therapeutic exploration through play, art, and creative expression
             to help process emotions and build resilience.
           </p>
         </Card>
+      </div>
+
+      <div class="service-list">
+        <p class="specialization-intro">
+          I provide therapeutic support for a wide range of concerns, including:
+        </p>
+        <ul>
+          <li>
+            <strong>Anxiety & Stress:</strong> General, academic, and social
+            anxiety, alongside stress management.
+          </li>
+          <li>
+            <strong>Mood & Emotional Regulation:</strong> Persistent sadness,
+            anger management, and emotional expression.
+          </li>
+          <li>
+            <strong>Neurodiversity:</strong> Support for individuals with ADHD
+            and ASD.
+          </li>
+          <li>
+            <strong>Life Transitions:</strong> Navigating major life changes,
+            including moving countries or changing schools.
+          </li>
+          <li>
+            <strong>Identity & Self-Esteem:</strong> Gender and identity
+            exploration, self-discovery, and building confidence.
+          </li>
+          <li>
+            <strong>Relationships & Social Challenges:</strong> Family dynamics,
+            relationship concerns, friendship difficulties, and bullying.
+          </li>
+          <li>
+            <strong>Grief & Loss:</strong> Processing bereavement and other
+            forms of loss.
+          </li>
+          <li>
+            <strong>Daily Functioning:</strong> Addressing sleep issues and
+            related behavioral challenges.
+          </li>
+        </ul>
       </div>
     </div>
   </section>
@@ -112,6 +145,29 @@ export default {
   margin-bottom: 12px;
   line-height: 1.8;
   font-size: 0.95rem;
+}
+
+.card-heading-with-chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.card-heading-with-chip h3 {
+  margin: 0;
+}
+
+.chip {
+  display: inline-block;
+  background: whitesmoke;
+  color: #444;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 @media (min-width: 760px) {
