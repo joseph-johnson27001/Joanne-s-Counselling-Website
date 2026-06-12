@@ -3,7 +3,7 @@
     <div class="navbar-inner">
       <div class="brand">
         <img
-          src="@/assets/images/jb_icon_white.png"
+          src="@/assets/images/jb_icon_white_compressed.png"
           alt="Joanne Barnuevo Logo"
           class="logo"
         />
