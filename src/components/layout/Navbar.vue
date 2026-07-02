@@ -4,7 +4,7 @@
       <div class="brand">
         <img
           src="@/assets/images/jb_icon_white_compressed.png"
-          alt="Joanne Barnuevo Logo"
+          alt="Joanne Barnuevo — counsellor in Bangkok"
           class="logo"
         />
       </div>

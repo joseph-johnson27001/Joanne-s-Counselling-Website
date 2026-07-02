@@ -12,7 +12,7 @@
         <div class="panel-image visual-container">
           <img
             :src="chairImage"
-            alt="Comfortable chair in a warm counselling space"
+            alt="Comfortable counselling room for in-person therapy sessions in Bangkok"
             class="image-fill"
           />
         </div>

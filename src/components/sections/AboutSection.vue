@@ -52,7 +52,7 @@
         <div class="about-visual visual-container">
           <img
             src="@/assets/images/Joanne_Cambodia.jpeg"
-            alt="Joanne Barnuevo, MSCP - Counselor"
+            alt="Joanne Barnuevo, MSc Counselling Psychology — counsellor in Bangkok"
             class="image-fill"
           />
         </div>
