@@ -17,8 +17,9 @@
             living and working in Bangkok since 2017. My journey into
             counselling began in 2021, shaped by years of working in education
             and mental health, as well as my own experiences adapting to a new
-            country and embracing diverse cultures. I hold a Master of Science
-            in Counselling Psychology.
+            country and embracing diverse cultures. I hold a Master of Science 
+            in Counselling Psychology and am an Individual Member of the British 
+            Association for Counselling and Psychotherapy (BACP).
           </p>
           <p>
             I support children, adolescents, and adults who are navigating a
