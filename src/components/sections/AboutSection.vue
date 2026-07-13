@@ -28,8 +28,7 @@
             loss, bereavement, relationship and family concerns, bullying,
             friendship difficulties, sleep issues, transitions such as moving
             countries or schools, confidence, gender and identity and
-            self-discovery. Having experienced firsthand the impact of change
-            and new environments, I bring empathy and understanding to my work.
+            self-discovery. 
           </p>
           <p>
             Over the years, I've come to deeply appreciate the diversity and
