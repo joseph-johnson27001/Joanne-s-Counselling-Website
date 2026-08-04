@@ -30,7 +30,7 @@
           <p class="hero-text">
             My practice is grounded in attentive listening, creative activities,
             and genuine connection, offering a safe environment where you can
-            feel supported, grow, and connect in your own way and at your own
+            feel supported, become unstuck, and connect in your own way and at your own
             pace.
           </p>
           <div class="hero-actions">

@@ -13,30 +13,27 @@
       <div class="about-grid">
         <div class="about-copy">
           <p>
-            My name is Joanne. My roots are in the Philippines, but I have been
-            living and working in Bangkok since 2017. My journey into
-            counselling began in 2021, shaped by years of working in education
-            and mental health, as well as my own experiences adapting to a new
-            country and embracing diverse cultures. I hold a Master of Science 
-            in Counselling Psychology and am an Individual Member of the British 
-            Association for Counselling and Psychotherapy (BACP).
+            Hi, I'm Joanne. My roots are in the Philippines, and since moving to
+            Bangkok in 2017, it has become my home. My journey into counselling
+            began through volunteer work as Psychological First-Aid (PFA) and
+            Mental Health &amp; Psychosocial Support (MHPSS) provider and has
+            since been shaped by experience in education, school counselling, as
+            well as my own journey of adapting to a new country.
           </p>
           <p>
-            I support children, adolescents, and adults who are navigating a
-            wide range of challenges, including general, academic, and social
-            anxiety, stress, anger, persistent sadness, ADHD, ASD, grief and
-            loss, bereavement, relationship and family concerns, bullying,
-            friendship difficulties, sleep issues, transitions such as moving
-            countries or schools, confidence, gender and identity and
-            self-discovery. 
+            I hold a Master of Science in Counselling Psychology and currently
+            support children, adolescents, and adults in my private practice. I
+            am an Individual Member of the British Association for Counselling
+            and Psychotherapy (BACP) and a member of the International School
+            Counselor Association (ISCA) and Play Therapy UK (PTUK).
           </p>
           <p>
             Over the years, I've come to deeply appreciate the diversity and
             unique strengths each person brings to the counselling room. These
             experiences have shaped me into a counsellor who is committed to
-            creating a warm, welcoming, and non-judgmental space. Here,
-            children, adolescents, and adults can feel truly heard, supported,
-            and empowered to grow in ways that are meaningful to them.
+            creating a warm, welcoming, and non-judgmental space where people
+            can feel truly heard, supported, and empowered to grow in ways that
+            are meaningful to them.
           </p>
           <!-- <p>
             I believe in ongoing professional development and adhere to the ethical standards of my affiliated organizations, which you can view here:
