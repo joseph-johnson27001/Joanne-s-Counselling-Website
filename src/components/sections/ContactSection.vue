@@ -1,106 +1,83 @@
 <template>
   <section id="contact" class="section-block contact-block">
     <div class="section-content">
-      <div class="section-heading">
-        <p class="eyebrow">Contact</p>
-        <h2>Ready To Connect?</h2>
-        <p class="subtitle">
-          Booking is simple. Send a message to
-          <a href="mailto:joanneb.counselling@gmail.com" class="email-link"
-            >joanneb.counselling@gmail.com</a
-          >
-          with a brief introduction and what you’d like to share in counselling.
-          I’ll respond with next steps and available times.
-        </p>
-      </div>
-
-      <!-- <div class="contact-grid">
-        <div class="contact-card">
-          <h3>Appointment</h3>
-          <p>
-            You can reach me by sending an email to
-            <a href="mailto:joanneb.counselling@gmail.com" class="email-link"
-              >joanneb.counselling@gmail.com</a
-            >. A simple introduction is all that's needed.
+      <div class="contact-layout">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Ready to connect?</h2>
+          <p class="subtitle">
+            Send a brief introduction and what you’d like to share in
+            counselling. I’ll reply with next steps and available times.
           </p>
         </div>
 
-        <div class="contact-card">
-          <h3>Age</h3>
-          <p>Children (age 4+), adolescents, and adults.</p>
+        <div class="contact-action">
+          <Button href="mailto:joanneb.counselling@gmail.com">
+            Get in touch
+          </Button>
+          <p class="contact-hint">
+            Or write directly to
+            <a
+              href="mailto:joanneb.counselling@gmail.com"
+              class="brand-link"
+              >joanneb.counselling@gmail.com</a
+            >
+          </p>
         </div>
-      </div> -->
+      </div>
     </div>
   </section>
 </template>
 
 <script>
+import Button from "@/components/ui/Button.vue";
+
 export default {
   name: "ContactSection",
+  components: {
+    Button,
+  },
 };
 </script>
 
 <style scoped>
-.section-block {
-  background: #e8f0ed;
+.contact-block {
+  background: var(--color-band-moss);
 }
 
-.contact-grid {
+.contact-layout {
   display: grid;
-  gap: 32px;
+  gap: var(--space-6);
+  align-items: end;
 }
 
-.contact-card {
-  padding: 32px;
-  border-radius: 24px;
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(184, 107, 71, 0.08);
-  box-shadow: 0 8px 24px rgba(45, 42, 36, 0.06);
-  transition: all 0.3s ease;
+.section-heading {
+  margin-bottom: 0;
 }
 
-.contact-card:hover {
-  box-shadow: 0 16px 40px rgba(45, 42, 36, 0.1);
-  border-color: rgba(184, 107, 71, 0.16);
+.contact-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-4);
 }
 
-.contact-card h3 {
-  margin-top: 0;
-  margin-bottom: 16px;
-  font-size: 1.1rem;
-}
-
-.contact-card ul {
+.contact-hint {
   margin: 0;
-  padding-left: 1.5rem;
-  line-height: 1.85;
-}
-
-.contact-card li {
-  margin-bottom: 8px;
-}
-
-.contact-card p {
-  margin: 0;
-  line-height: 1.8;
-  color: #4d4338;
-}
-
-.email-link {
-  color: #0066cc;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.email-link:hover {
-  color: #0052a3;
+  font-size: var(--text-sm);
+  color: var(--color-ink-subtle);
+  line-height: var(--leading-body);
 }
 
 @media (min-width: 900px) {
-  .contact-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 36px;
+  .contact-layout {
+    grid-template-columns: 1.4fr 1fr;
+    gap: var(--space-8);
+  }
+
+  .contact-action {
+    align-items: flex-end;
+    text-align: right;
   }
 }
 </style>

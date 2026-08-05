@@ -4,10 +4,9 @@
       <div class="section-heading">
         <p class="eyebrow">About</p>
         <h2>Joanne Barnuevo</h2>
-        <!-- <p class="subtitle">
-          Counselor | Person-Centered | Integrative | Therapeutic Play Skills
-          (PTUK/PTI)
-        </p> -->
+        <p class="subtitle credentials">
+          MSc Counselling Psychology · BACP · ISCA · PTUK
+        </p>
       </div>
 
       <div class="about-grid">
@@ -28,22 +27,11 @@
             Counselor Association (ISCA) and Play Therapy UK (PTUK).
           </p>
           <p>
-            Over the years, I've come to deeply appreciate the diversity and
-            unique strengths each person brings to the counselling room. These
-            experiences have shaped me into a counsellor who is committed to
-            creating a warm, welcoming, and non-judgmental space where people
-            can feel truly heard, supported, and empowered to grow in ways that
-            are meaningful to them.
+            My practice is grounded in attentive listening, creative activities,
+            and genuine connection — a warm, non-judgmental space where you can
+            feel heard, supported, and free to grow in ways that are meaningful
+            to you, at your own pace.
           </p>
-          <!-- <p>
-            I believe in ongoing professional development and adhere to the ethical standards of my affiliated organizations, which you can view here:
-          </p>
-          <p>
-            <a href="https://drive.google.com/file/d/1PnoG0H1E7hb4leTSO0QpEF3wYPFY6gTM/view?pli=1" target="_blank">ASCA Ethical Standards</a>
-          </p>
-          <p>
-            <a href="https://playtherapy.org.uk/wp-content/uploads/2025/08/PTUK-Ethical-Framework.pdf" target="_blank">Play Therapy UK Ethical Framework</a>
-          </p> -->
         </div>
 
         <div class="about-visual visual-container">
@@ -65,22 +53,27 @@ export default {
 </script>
 
 <style scoped>
-.section-block {
-  background: #f0e8f5;
+.about-block {
+  background: var(--color-band-sage);
+}
+
+.credentials {
+  font-size: var(--text-sm);
+  letter-spacing: 0.02em;
+  color: var(--color-ink-subtle);
 }
 
 .about-grid {
   display: grid;
-  gap: 48px;
-  margin-top: 0;
+  gap: var(--space-7);
   align-items: start;
 }
 
 .about-copy p {
-  margin: 0 0 24px;
-  line-height: 1.85;
-  color: #4d4338;
-  font-size: 1.02rem;
+  margin: 0 0 var(--space-5);
+  line-height: var(--leading-body);
+  color: var(--color-ink-muted);
+  font-size: var(--text-base);
 }
 
 .about-copy p:last-child {
@@ -89,33 +82,30 @@ export default {
 
 .about-visual {
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  aspect-ratio: 1;
-  max-height: 500px;
+  aspect-ratio: 4 / 5;
+  max-width: 420px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .about-visual .image-fill {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: bottom;
+  object-position: center top;
 }
 
-@media (min-width: 1200px) {
-  .about-visual {
-    aspect-ratio: auto;
-    max-height: none;
-    margin: 0;
-  }
-}
-
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .about-grid {
-    grid-template-columns: 2fr 1fr;
-    gap: 30px;
+    grid-template-columns: 1.35fr 0.9fr;
+    gap: var(--space-8);
+    align-items: center;
+  }
+
+  .about-visual {
+    max-width: none;
+    margin: 0;
+    aspect-ratio: 4 / 5;
   }
 }
 </style>

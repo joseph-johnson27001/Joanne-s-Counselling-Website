@@ -1,19 +1,21 @@
 <template>
-  <footer class="section-block site-footer">
+  <footer class="site-footer">
     <div class="footer-content">
-      <div>
-        <p>Joanne Barnuevo</p>
-        <p>
+      <div class="footer-brand">
+        <p class="footer-name">Joanne Barnuevo</p>
+        <p class="footer-tagline">
           Supporting children, adolescents, and adults in-person and online.
         </p>
       </div>
-      <div>
+      <div class="footer-meta">
         <p>
-          <a href="mailto:joanneb.counselling@gmail.com"
+          <a
+            href="mailto:joanneb.counselling@gmail.com"
+            class="footer-email"
             >joanneb.counselling@gmail.com</a
           >
         </p>
-        <p>© 2026 Joanne Barnuevo</p>
+        <p class="footer-copy">© 2026 Joanne Barnuevo</p>
       </div>
     </div>
   </footer>
@@ -29,72 +31,77 @@ export default {
 .site-footer {
   display: flex;
   justify-content: center;
-  color: white;
-  background: #3d5a73;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--color-chrome-text);
+  background: var(--color-chrome);
+  border-top: 1px solid var(--color-chrome-border);
+  padding: var(--space-7) var(--space-section-x);
 }
 
 .footer-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 32px;
-  max-width: 1400px;
+  gap: var(--space-6);
+  max-width: var(--max-width);
   width: 100%;
+}
+
+.footer-brand,
+.footer-meta {
+  min-width: 220px;
+}
+
+.footer-name {
+  margin: 0 0 var(--space-3);
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--text-md);
+  color: var(--color-chrome-text);
+  letter-spacing: var(--tracking-tight);
+}
+
+.footer-tagline,
+.footer-copy {
+  margin: 0;
+  line-height: var(--leading-body);
+  font-size: var(--text-sm);
+  color: var(--color-chrome-muted);
+}
+
+.footer-meta p {
+  margin: 0 0 var(--space-3);
+}
+
+.footer-meta p:last-child {
+  margin-bottom: 0;
+}
+
+.footer-email {
+  color: var(--color-chrome-text);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: var(--text-sm);
+  border-bottom: 1px solid transparent;
+  transition:
+    color var(--duration-fast) var(--ease-out),
+    border-color var(--duration-fast) var(--ease-out);
+}
+
+.footer-email:hover {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+.footer-email:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-focus);
+  border-radius: 2px;
 }
 
 @media (max-width: 740px) {
   .footer-content {
     flex-direction: column;
-    gap: 24px;
-  }
-}
-
-.site-footer div {
-  min-width: 240px;
-}
-
-.site-footer p {
-  margin: 0 0 10px 0;
-  line-height: 1.7;
-  font-size: 0.95rem;
-}
-
-.site-footer p:first-child {
-  font-weight: 600;
-  font-size: 1rem;
-  margin-bottom: 12px;
-}
-
-.site-footer a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.site-footer a::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.8);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease;
-}
-
-.site-footer a:hover::after {
-  transform: scaleX(1);
-}
-
-@media (max-width: 740px) {
-  .site-footer {
-    flex-direction: column;
-    gap: 24px;
+    gap: var(--space-5);
   }
 }
 </style>

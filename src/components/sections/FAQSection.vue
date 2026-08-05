@@ -3,7 +3,7 @@
     <div class="section-content">
       <div class="section-heading">
         <p class="eyebrow">FAQ</p>
-        <h2>Questions Clients & Families Often Ask</h2>
+        <h2>Questions clients & families often ask</h2>
       </div>
 
       <div class="accordion-list">
@@ -24,10 +24,10 @@
           <p>Children (ages 4+), adolescents, and adults.</p>
         </Accordion>
 
-        <Accordion title="How do I book an appointment?">
+        <Accordion title="How do I book an appointment?" :open="true">
           <p>
             You can reach me by sending an email to
-            <a href="mailto:joanneb.counselling@gmail.com" class="email-link"
+            <a href="mailto:joanneb.counselling@gmail.com" class="brand-link"
               >joanneb.counselling@gmail.com</a
             >. A simple introduction is all that's needed.
           </p>
@@ -53,35 +53,20 @@ export default {
 </script>
 
 <style scoped>
-.section-block {
-  background: #fde8e0;
+.faq-block {
+  background: var(--color-band-stone);
 }
 
 .accordion-list {
   display: grid;
-  gap: 4px;
-  margin-top: 0;
+  gap: 0;
+  max-width: 42rem;
+  border-top: 1px solid var(--color-border);
 }
 
 .accordion-list p {
   margin: 0;
-  line-height: 1.8;
-}
-
-.email-link {
-  color: #0066cc;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.email-link:hover {
-  color: #0052a3;
-}
-
-@media (max-width: 900px) {
-  .accordion-list {
-    grid-template-columns: 1fr;
-  }
+  line-height: var(--leading-body);
+  color: var(--color-ink-muted);
 }
 </style>

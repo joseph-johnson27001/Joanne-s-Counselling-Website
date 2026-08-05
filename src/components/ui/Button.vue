@@ -3,8 +3,8 @@
     v-if="href"
     :href="href"
     class="button"
-    :target="external ? '_blank' : '_self'"
-    rel="noopener noreferrer"
+    :target="external ? '_blank' : undefined"
+    :rel="external ? 'noopener noreferrer' : undefined"
   >
     <slot />
   </a>
@@ -35,30 +35,39 @@ export default {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding: 1rem 2rem;
-  border-radius: 999px;
-  border: 2px solid #a35f3f;
-  background: #a35f3f;
-  color: white;
-  font-weight: 700;
-  letter-spacing: 0.3px;
+  padding: 0.875rem 1.5rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-accent);
+  background: var(--color-accent);
+  color: #fff;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: var(--text-sm);
+  letter-spacing: 0.01em;
   text-decoration: none;
   cursor: pointer;
+  box-shadow: var(--shadow-sm);
   transition:
-    transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
-    background-color 0.3s ease,
-    box-shadow 0.3s ease,
-    border-color 0.3s ease;
-  box-shadow: 0 8px 20px rgba(184, 107, 71, 0.2);
+    transform var(--duration-fast) var(--ease-out),
+    background-color var(--duration-fast) var(--ease-out),
+    border-color var(--duration-fast) var(--ease-out),
+    box-shadow var(--duration-fast) var(--ease-out);
 }
 
 .button:hover {
-  background: #a35f3f;
-  border-color: #a35f3f;
-  box-shadow: 0 12px 32px rgba(184, 107, 71, 0.3);
+  background: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
 }
 
 .button:active {
-  box-shadow: 0 8px 20px rgba(184, 107, 71, 0.2);
+  transform: translateY(0);
+  box-shadow: var(--shadow-sm);
+}
+
+.button:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-focus);
 }
 </style>

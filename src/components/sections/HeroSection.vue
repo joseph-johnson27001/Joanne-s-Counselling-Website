@@ -15,23 +15,17 @@
       <source src="@/assets/videos/grass-boomerang.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
+    <div class="hero-scrim" aria-hidden="true"></div>
     <div class="section-content">
       <div class="hero-content">
         <div class="hero-copy" :class="{ 'animate-in': !isVideoLoading }">
           <p class="eyebrow">
             Healing is play, listening is art, the rest is connection.
           </p>
-          <h1>Welcome</h1>
+          <h1>Joanne Barnuevo</h1>
           <p class="hero-text">
-            Whether you've wandered here out of curiosity while searching for a
-            certain kind of counselling or are simply looking for a space to see
-            what feels right for you, I'm glad you're here.
-          </p>
-          <p class="hero-text">
-            My practice is grounded in attentive listening, creative activities,
-            and genuine connection, offering a safe environment where you can
-            feel supported, become unstuck, and connect in your own way and at your own
-            pace.
+            Person-centred counselling for children, adolescents, and adults —
+            in person and online, at your pace.
           </p>
           <div class="hero-actions">
             <Button href="#contact">Get in touch</Button>
@@ -55,6 +49,7 @@ export default {
   data() {
     return {
       isVideoLoading: true,
+      visibilityHandler: null,
     };
   },
   methods: {
@@ -70,20 +65,24 @@ export default {
   },
   mounted() {
     if (this.$refs.heroVideo) {
-      // Ensure video plays on mount
       const playPromise = this.$refs.heroVideo.play();
       if (playPromise !== undefined) {
         playPromise.catch(() => {
-          // Autoplay prevented, this is expected on some iOS versions
+          // Autoplay prevented — expected on some iOS versions
         });
       }
 
-      // Resume playback when page becomes visible
-      document.addEventListener("visibilitychange", () => {
+      this.visibilityHandler = () => {
         if (!document.hidden && this.$refs.heroVideo) {
           this.$refs.heroVideo.play();
         }
-      });
+      };
+      document.addEventListener("visibilitychange", this.visibilityHandler);
+    }
+  },
+  beforeUnmount() {
+    if (this.visibilityHandler) {
+      document.removeEventListener("visibilitychange", this.visibilityHandler);
     }
   },
 };
@@ -91,40 +90,41 @@ export default {
 
 <style scoped>
 .hero-block {
-  background: #fef9f5;
+  background: var(--color-ground);
   position: relative;
   overflow: hidden;
+  min-height: min(88dvh, 820px);
+  display: flex;
+  align-items: center;
+  padding-top: clamp(72px, 12vw, 120px);
+  padding-bottom: clamp(72px, 12vw, 120px);
 }
 
 .hero-video {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-
   z-index: 1;
 }
 
-.hero-block::before {
-  content: "";
+.hero-scrim {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   z-index: 2;
   pointer-events: none;
+  background: var(--color-scrim);
 }
 
 .section-content {
   position: relative;
   z-index: 3;
-  display: flex;
-  align-items: center;
-  height: 100%;
-  min-height: 80dvh;
+  width: 100%;
+}
+
+.hero-content {
+  max-width: 36rem;
 }
 
 .hero-copy {
@@ -132,14 +132,14 @@ export default {
 }
 
 .hero-copy.animate-in {
-  animation: fadeInUp 0.8s ease-out forwards;
-  animation-delay: 0.25s;
+  animation: fadeInUp 1.4s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  animation-delay: 0.35s;
 }
 
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(12px);
   }
   to {
     opacity: 1;
@@ -147,82 +147,77 @@ export default {
   }
 }
 
-.hero-content {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 12px;
-  align-items: center;
-  justify-content: start;
-}
-
-@media (max-width: 900px) {
-  .hero-content {
-    grid-template-columns: 1fr;
-    gap: 24px;
-    align-items: start;
-  }
-
-  .hero-video {
-    object-position: 35% bottom;
-  }
-}
-
 .eyebrow {
-  margin: 0 0 24px;
-  font-size: 0.8rem;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin: 0 0 var(--space-4);
+  font-size: var(--text-xs);
+  color: rgba(255, 255, 255, 0.78);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 h1 {
-  margin: 0 0 24px 0;
-  font-size: clamp(5rem, 6vw, 4rem);
-  line-height: 1.1;
-  letter-spacing: -0.01em;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  margin: 0 0 var(--space-5);
+  font-size: var(--text-hero);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 500;
 }
 
 .hero-text {
-  margin: 0 0 32px 0;
-  line-height: 1.8;
-  font-size: 1.05rem;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0 0 var(--space-6);
+  line-height: var(--leading-body);
+  font-size: var(--text-md);
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 32rem;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: var(--space-4);
   align-items: center;
-  padding-top: 20px;
 }
 
 .hero-actions :deep(.button) {
-  background: whitesmoke;
-  color: #444;
-  border: none;
+  background: #fff8f0;
+  color: var(--color-ink);
+  border-color: #fff8f0;
   font-weight: 500;
 }
 
-.hero-visual .image-fill {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 1 / 1;
+.hero-actions :deep(.button:hover) {
+  background: #fff3e6;
+  border-color: #fff3e6;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 900px) {
+  .hero-video {
+    object-position: 35% bottom;
+  }
 }
 
 @media (max-width: 640px) {
-  .hero-actions {
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 20px;
+  .hero-block {
+    min-height: 78dvh;
   }
 
-  h1 {
-    font-size: clamp(2.5rem, 5vw, 3.5rem);
+  .hero-actions {
+    width: 100%;
+  }
+
+  .hero-actions :deep(.button) {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-copy.animate-in {
+    animation: none;
+    opacity: 1;
   }
 }
 </style>

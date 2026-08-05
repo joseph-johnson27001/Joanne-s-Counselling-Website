@@ -1,19 +1,25 @@
 <template>
-  <header class="section-block navbar">
+  <header class="navbar">
     <div class="navbar-inner">
-      <div class="brand">
+      <a
+        href="#home"
+        class="brand"
+        @click.prevent="scrollToSection('home')"
+        aria-label="Joanne Barnuevo — home"
+      >
         <img
-          src="@/assets/images/jb_icon_white_compressed.png"
+          src="@/assets/images/jb_icon.png"
           alt="Joanne Barnuevo — counsellor in Bangkok"
           class="logo"
         />
-      </div>
+      </a>
 
       <button
         class="menu-toggle"
         type="button"
         @click="toggleMenu"
         :aria-expanded="menuOpen.toString()"
+        aria-controls="primary-nav"
         aria-label="Toggle navigation"
       >
         <svg v-if="!menuOpen" viewBox="0 0 24 24" aria-hidden="true">
@@ -21,7 +27,7 @@
             d="M3 7h18M3 12h18M3 17h18"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
+            stroke-width="1.75"
             stroke-linecap="round"
           />
         </svg>
@@ -30,13 +36,14 @@
             d="M6 6l12 12M18 6L6 18"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
+            stroke-width="1.75"
             stroke-linecap="round"
           />
         </svg>
       </button>
 
       <nav
+        id="primary-nav"
         class="nav-links"
         :class="{ open: menuOpen }"
         aria-label="Primary site navigation"
@@ -79,16 +86,17 @@ export default {
 
 <style scoped>
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
   width: 100%;
-  background: #6a517d;
-  backdrop-filter: blur(6px);
-  border-bottom: 1px solid #000;
+  background: var(--color-chrome-soft);
+  backdrop-filter: blur(16px) saturate(1.2);
+  -webkit-backdrop-filter: blur(16px) saturate(1.2);
+  border-bottom: 1px solid var(--color-chrome-border);
   display: flex;
   justify-content: center;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  position: relative;
-  z-index: 50;
+  padding: 0 var(--space-section-x);
 }
 
 .navbar-inner {
@@ -96,24 +104,26 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
-  max-width: 1400px;
+  gap: var(--space-4);
+  max-width: var(--max-width);
   width: 100%;
-  padding: 5px 0px;
+  padding: 0.65rem 0;
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
-  font-weight: 400;
-  color: #faf7f3;
-  font-family: "Allura", cursive;
-  font-size: 2rem;
-  line-height: 1.05;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+}
+
+.brand:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-focus);
 }
 
 .logo {
-  height: 50px;
+  height: 42px;
   width: auto;
   object-fit: contain;
 }
@@ -122,76 +132,91 @@ export default {
   display: none;
   border: none;
   background: transparent;
-  color: #faf7f3;
-  font-size: 1.5rem;
+  color: var(--color-chrome-text);
   cursor: pointer;
+  padding: var(--space-2);
+  border-radius: var(--radius-sm);
+  line-height: 0;
+}
+
+.menu-toggle:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-focus);
 }
 
 .menu-toggle svg {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.35rem;
+  height: 1.35rem;
 }
 
 .nav-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
+  gap: 0.25rem 1.25rem;
   align-items: center;
 }
 
 .nav-links a {
-  color: #fff;
+  color: var(--color-chrome-text);
   text-decoration: none;
   font-weight: 400;
-  font-size: 1rem;
-  letter-spacing: 0.5px;
-  transition: all 0.3s ease;
+  font-size: var(--text-sm);
+  letter-spacing: 0.02em;
   position: relative;
-  font-family: "Montserrat", sans-serif;
-  text-transform: capitalize;
+  font-family: var(--font-body);
   cursor: pointer;
+  padding: 0.35rem 0;
+  opacity: 0.88;
+  transition: opacity var(--duration-fast) var(--ease-out);
+  border-radius: var(--radius-sm);
 }
 
 .nav-links a::after {
   content: "";
   position: absolute;
-  bottom: -4px;
+  bottom: 0;
   left: 0;
   right: 0;
-  height: 2px;
-  background: #fff;
+  height: 1px;
+  background: currentColor;
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.3s ease;
+  transition: transform var(--duration-base) var(--ease-out);
+  opacity: 0.7;
+}
+
+.nav-links a:hover {
+  opacity: 1;
 }
 
 .nav-links a:hover::after {
   transform: scaleX(1);
 }
 
-@media (max-width: 820px) {
-  .brand {
-    font-size: 1.8rem;
-  }
+.nav-links a:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-focus);
+  opacity: 1;
+}
 
+@media (max-width: 820px) {
   .menu-toggle {
     display: inline-flex;
   }
 
   .nav-links {
     position: absolute;
-    top: 100%;
+    top: calc(100% + 1px);
     left: 50%;
     transform: translateX(-50%);
     width: 100vw;
     display: none;
     flex-direction: column;
     gap: 0;
-    padding: 20px 20px;
-    border-radius: 0;
-    background: whitesmoke;
-    border-bottom: 1px solid #7474ac;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+    padding: var(--space-3) var(--space-section-x) var(--space-5);
+    background: var(--color-chrome);
+    border-bottom: 1px solid var(--color-chrome-border);
+    box-shadow: var(--shadow-md);
     z-index: 25;
   }
 
@@ -201,30 +226,19 @@ export default {
 
   .nav-links a {
     width: 100%;
-    padding: 12px 0;
-    color: #444;
-    border-bottom: 1px solid #d4d0cc;
-    position: relative;
-    transition: color 0.3s ease;
-    font-weight: 400;
+    padding: 0.9rem 0;
+    color: var(--color-chrome-text);
+    border-bottom: 1px solid var(--color-chrome-border);
+    opacity: 0.9;
+    font-size: var(--text-base);
+  }
+
+  .nav-links a:last-child {
+    border-bottom: none;
   }
 
   .nav-links a::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: #7474ac;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-    z-index: 1;
-  }
-
-  .nav-links a:hover::after {
-    transform: scaleX(1);
+    display: none;
   }
 }
 </style>

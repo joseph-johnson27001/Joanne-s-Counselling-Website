@@ -1,0 +1,102 @@
+/* Design tokens — botanical calm, warm */
+
+:root {
+  /* Surfaces */
+  --color-ground: #faf6f0;
+  --color-ground-alt: #efe6d8;
+  --color-surface: #fffdf9;
+  --color-surface-muted: rgba(255, 253, 249, 0.78);
+
+  /* Section bands — warmer rhythm */
+  --color-band-warm: #f3e9da;
+  --color-band-sage: #e5e4d2;
+  --color-band-stone: #ece3d4;
+  --color-band-moss: #d6d4bc;
+
+  /* Text */
+  --color-ink: #221e18;
+  --color-ink-muted: #5f564a;
+  --color-ink-subtle: #7a7164;
+
+  /* Accent — warm olive */
+  --color-accent: #6a7350;
+  --color-accent-hover: #575f41;
+  --color-accent-soft: rgba(106, 115, 80, 0.14);
+  --color-accent-border: rgba(106, 115, 80, 0.24);
+
+  /* Chrome — soft warm glass */
+  --color-chrome: #f4eee5;
+  --color-chrome-soft: rgba(250, 246, 240, 0.86);
+  --color-chrome-text: #221e18;
+  --color-chrome-muted: #6e6558;
+  --color-chrome-border: rgba(34, 30, 24, 0.09);
+
+  /* Borders & shadows */
+  --color-border: rgba(34, 30, 24, 0.09);
+  --color-border-strong: rgba(34, 30, 24, 0.15);
+  --shadow-sm: 0 1px 2px rgba(55, 42, 28, 0.05);
+  --shadow-md: 0 8px 24px rgba(55, 42, 28, 0.07);
+  --shadow-focus: 0 0 0 3px rgba(106, 115, 80, 0.35);
+
+  /* Hero / overlays — warm brown scrim */
+  --color-scrim: linear-gradient(
+    105deg,
+    rgba(42, 32, 22, 0.58) 0%,
+    rgba(42, 32, 22, 0.36) 48%,
+    rgba(42, 32, 22, 0.2) 100%
+  );
+
+  /* Typography */
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-body: "Figtree", system-ui, -apple-system, sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1.05rem;
+  --text-md: 1.125rem;
+  --text-lg: 1.3rem;
+  --text-xl: clamp(1.75rem, 3vw, 2.25rem);
+  --text-2xl: clamp(2.2rem, 4vw, 2.8rem);
+  --text-hero: clamp(2.75rem, 6vw, 4.25rem);
+
+  --leading-tight: 1.15;
+  --leading-snug: 1.35;
+  --leading-body: 1.75;
+
+  --tracking-tight: -0.02em;
+  --tracking-wide: 0.14em;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 80px;
+  --space-section-y: clamp(64px, 10vw, 104px);
+  --space-section-x: clamp(20px, 5vw, 40px);
+
+  /* Layout */
+  --max-width: 1120px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 160ms;
+  --duration-base: 280ms;
+  --duration-slow: 480ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+    --duration-slow: 0ms;
+  }
+}

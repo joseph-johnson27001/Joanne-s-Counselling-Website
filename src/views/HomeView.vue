@@ -34,15 +34,51 @@ export default {
     FAQSection,
     ContactSection,
   },
+  mounted() {
+    this.setupReveal();
+  },
+  beforeUnmount() {
+    if (this._revealObserver) {
+      this._revealObserver.disconnect();
+    }
+  },
+  methods: {
+    setupReveal() {
+      const targets = this.$el.querySelectorAll(
+        ".section-block:not(.hero-block)",
+      );
+      targets.forEach((el) => el.classList.add("reveal"));
+
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        targets.forEach((el) => el.classList.add("is-visible"));
+        return;
+      }
+
+      this._revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              this._revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { rootMargin: "0px 0px -8% 0px", threshold: 0.12 },
+      );
+
+      targets.forEach((el) => this._revealObserver.observe(el));
+    },
+  },
 };
 </script>
 
 <style scoped>
 .home-page {
-  color: #2f2a24;
+  color: var(--color-ink);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: var(--color-ground);
 }
 
 .page-shell {
