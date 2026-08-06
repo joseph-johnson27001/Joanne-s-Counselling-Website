@@ -4,10 +4,14 @@
       <div class="contact-layout">
         <div class="section-heading">
           <p class="eyebrow">Contact</p>
-          <h2>Ready to connect?</h2>
+          <h2>Ready To Connect?</h2>
           <p class="subtitle">
-            Send a brief introduction and what you’d like to share in
-            counselling. I’ll reply with next steps and available times.
+            Booking is simple. Send a message to
+            <a href="mailto:joanneb.counselling@gmail.com" class="brand-link"
+              >joanneb.counselling@gmail.com</a
+            >
+            with a brief introduction and what you’d like to share in
+            counselling. I’ll respond with next steps and available times.
           </p>
         </div>
 
@@ -15,14 +19,6 @@
           <Button href="mailto:joanneb.counselling@gmail.com">
             Get in touch
           </Button>
-          <p class="contact-hint">
-            Or write directly to
-            <a
-              href="mailto:joanneb.counselling@gmail.com"
-              class="brand-link"
-              >joanneb.counselling@gmail.com</a
-            >
-          </p>
         </div>
       </div>
     </div>
@@ -60,13 +56,6 @@ export default {
   flex-direction: column;
   align-items: flex-start;
   gap: var(--space-4);
-}
-
-.contact-hint {
-  margin: 0;
-  font-size: var(--text-sm);
-  color: var(--color-ink-subtle);
-  line-height: var(--leading-body);
 }
 
 @media (min-width: 900px) {

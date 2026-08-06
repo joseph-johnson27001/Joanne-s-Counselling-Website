@@ -21,7 +21,7 @@
   letter-spacing: var(--tracking-wide);
   color: var(--color-accent);
   font-size: var(--text-xs);
-  font-weight: 600;
+  font-weight: 500;
   font-family: var(--font-body);
 }
 

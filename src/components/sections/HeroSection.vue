@@ -19,13 +19,20 @@
     <div class="section-content">
       <div class="hero-content">
         <div class="hero-copy" :class="{ 'animate-in': !isVideoLoading }">
-          <p class="eyebrow">
+          <p class="hero-quote">
             Healing is play, listening is art, the rest is connection.
           </p>
-          <h1>Joanne Barnuevo</h1>
+          <h1>Welcome</h1>
           <p class="hero-text">
-            Person-centred counselling for children, adolescents, and adults —
-            in person and online, at your pace.
+            Whether you've wandered here out of curiosity while searching for a
+            certain kind of counselling or are simply looking for a space to see
+            what feels right for you, I'm glad you're here.
+          </p>
+          <p class="hero-text">
+            My practice is grounded in attentive listening, creative activities,
+            and genuine connection, offering a safe environment where you can
+            feel supported, become unstuck, and connect in your own way and at
+            your own pace.
           </p>
           <div class="hero-actions">
             <Button href="#contact">Get in touch</Button>
@@ -93,11 +100,11 @@ export default {
   background: var(--color-ground);
   position: relative;
   overflow: hidden;
-  min-height: min(88dvh, 820px);
+  min-height: min(92dvh, 900px);
   display: flex;
   align-items: center;
-  padding-top: clamp(72px, 12vw, 120px);
-  padding-bottom: clamp(72px, 12vw, 120px);
+  padding-top: clamp(88px, 11vw, 128px);
+  padding-bottom: clamp(64px, 9vw, 112px);
 }
 
 .hero-video {
@@ -124,7 +131,7 @@ export default {
 }
 
 .hero-content {
-  max-width: 36rem;
+  max-width: min(48rem, 100%);
 }
 
 .hero-copy {
@@ -147,31 +154,39 @@ export default {
   }
 }
 
-.eyebrow {
+.hero-quote {
   margin: 0 0 var(--space-4);
-  font-size: var(--text-xs);
-  color: rgba(255, 255, 255, 0.78);
-  letter-spacing: var(--tracking-wide);
-  text-transform: uppercase;
-  font-weight: 600;
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: 0.01em;
+  color: rgba(255, 252, 246, 0.88);
+  text-transform: none;
+  max-width: 40rem;
 }
 
 h1 {
   margin: 0 0 var(--space-5);
-  font-size: var(--text-hero);
-  line-height: var(--leading-tight);
+  font-size: clamp(2.5rem, 5.5vw, 3.75rem);
+  line-height: 1.1;
   letter-spacing: var(--tracking-tight);
-  color: #fff;
+  color: #fffef9;
   font-family: var(--font-display);
   font-weight: 500;
 }
 
 .hero-text {
-  margin: 0 0 var(--space-6);
-  line-height: var(--leading-body);
-  font-size: var(--text-md);
-  color: rgba(255, 255, 255, 0.88);
-  max-width: 32rem;
+  margin: 0 0 var(--space-4);
+  line-height: 1.75;
+  font-size: clamp(0.98rem, 1.4vw, 1.08rem);
+  color: rgba(255, 250, 244, 0.9);
+  max-width: none;
+}
+
+.hero-text:last-of-type {
+  margin-bottom: var(--space-6);
 }
 
 .hero-actions {
@@ -195,22 +210,42 @@ h1 {
 }
 
 @media (max-width: 900px) {
+  .hero-block {
+    min-height: auto;
+    align-items: flex-end;
+    padding-top: clamp(96px, 18vw, 140px);
+    padding-bottom: clamp(48px, 8vw, 72px);
+  }
+
   .hero-video {
     object-position: 35% bottom;
+  }
+
+  .hero-scrim {
+    background: linear-gradient(
+      180deg,
+      rgba(48, 34, 22, 0.28) 0%,
+      rgba(48, 34, 22, 0.55) 42%,
+      rgba(48, 34, 22, 0.78) 100%
+    );
+  }
+
+  .hero-content {
+    max-width: none;
   }
 }
 
 @media (max-width: 640px) {
-  .hero-block {
-    min-height: 78dvh;
-  }
-
   .hero-actions {
     width: 100%;
   }
 
   .hero-actions :deep(.button) {
     width: 100%;
+  }
+
+  h1 {
+    font-size: clamp(2.25rem, 11vw, 2.75rem);
   }
 }
 

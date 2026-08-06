@@ -3,7 +3,7 @@
     <div class="section-content">
       <div class="section-heading">
         <p class="eyebrow">Services</p>
-        <h2>Online & in-person sessions</h2>
+        <h2>Online & In-Person Sessions</h2>
       </div>
 
       <article class="counselling-panel">
@@ -16,7 +16,7 @@
         </div>
 
         <div class="panel-copy">
-          <h3 class="panel-title">Individual counselling</h3>
+          <h3 class="panel-title">Individual Counselling</h3>
           <p>
             One-on-one support for children, adolescents, and adults navigating
             life's challenges with a person-centred approach — through
@@ -30,7 +30,6 @@
       </article>
 
       <div class="specializations">
-        <h3 class="spec-heading">Areas of support</h3>
         <div class="spec-grid">
           <article
             v-for="spec in specializations"
@@ -170,13 +169,6 @@ export default {
 .specializations {
   border-top: 1px solid var(--color-border);
   padding-top: var(--space-7);
-}
-
-.spec-heading {
-  margin: 0 0 var(--space-6);
-  font-size: var(--text-lg);
-  font-weight: 500;
-  color: var(--color-ink);
 }
 
 .spec-grid {

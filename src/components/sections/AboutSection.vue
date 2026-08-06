@@ -27,10 +27,12 @@
             Counselor Association (ISCA) and Play Therapy UK (PTUK).
           </p>
           <p>
-            My practice is grounded in attentive listening, creative activities,
-            and genuine connection — a warm, non-judgmental space where you can
-            feel heard, supported, and free to grow in ways that are meaningful
-            to you, at your own pace.
+            Over the years, I've come to deeply appreciate the diversity and
+            unique strengths each person brings to the counselling room. These
+            experiences have shaped me into a counsellor who is committed to
+            creating a warm, welcoming, and non-judgmental space where people
+            can feel truly heard, supported, and empowered to grow in ways that
+            are meaningful to them.
           </p>
         </div>
 
@@ -86,6 +88,9 @@ export default {
   max-width: 420px;
   margin: 0 auto;
   width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: none;
 }
 
 .about-visual .image-fill {

@@ -35,11 +35,11 @@ export default {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0.875rem 1.5rem;
+  padding: 0.95rem 1.65rem;
   border-radius: var(--radius-pill);
   border: 1px solid var(--color-accent);
   background: var(--color-accent);
-  color: #fff;
+  color: #fffaf4;
   font-family: var(--font-body);
   font-weight: 500;
   font-size: var(--text-sm);

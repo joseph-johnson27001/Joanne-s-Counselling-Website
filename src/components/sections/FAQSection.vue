@@ -3,7 +3,7 @@
     <div class="section-content">
       <div class="section-heading">
         <p class="eyebrow">FAQ</p>
-        <h2>Questions clients & families often ask</h2>
+        <h2>Questions Clients & Families Often Ask</h2>
       </div>
 
       <div class="accordion-list">
@@ -24,7 +24,7 @@
           <p>Children (ages 4+), adolescents, and adults.</p>
         </Accordion>
 
-        <Accordion title="How do I book an appointment?" :open="true">
+        <Accordion title="How do I book an appointment?">
           <p>
             You can reach me by sending an email to
             <a href="mailto:joanneb.counselling@gmail.com" class="brand-link"

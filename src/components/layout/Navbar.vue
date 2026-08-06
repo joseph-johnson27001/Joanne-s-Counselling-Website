@@ -228,6 +228,7 @@ export default {
     width: 100%;
     padding: 0.9rem 0;
     color: var(--color-chrome-text);
+    border-radius: 0;
     border-bottom: 1px solid var(--color-chrome-border);
     opacity: 0.9;
     font-size: var(--text-base);

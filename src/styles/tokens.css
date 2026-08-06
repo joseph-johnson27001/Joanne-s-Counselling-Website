@@ -1,49 +1,50 @@
-/* Design tokens — botanical calm, warm */
+/* Design tokens — warm, welcoming botanical */
 
 :root {
-  /* Surfaces */
-  --color-ground: #faf6f0;
-  --color-ground-alt: #efe6d8;
-  --color-surface: #fffdf9;
-  --color-surface-muted: rgba(255, 253, 249, 0.78);
+  /* Surfaces — soft cream */
+  --color-ground: #fbf5ed;
+  --color-ground-alt: #f3e6d6;
+  --color-surface: #fffaf4;
+  --color-surface-muted: rgba(255, 250, 244, 0.82);
 
-  /* Section bands — warmer rhythm */
-  --color-band-warm: #f3e9da;
-  --color-band-sage: #e5e4d2;
-  --color-band-stone: #ece3d4;
-  --color-band-moss: #d6d4bc;
+  /* Section bands — peach, tea, blush, soft clay */
+  --color-band-warm: #f5e6d4;
+  --color-band-sage: #e7e4d0;
+  --color-band-stone: #f0e2d3;
+  --color-band-moss: #e4d3c0;
 
-  /* Text */
-  --color-ink: #221e18;
-  --color-ink-muted: #5f564a;
-  --color-ink-subtle: #7a7164;
+  /* Text — soft cocoa */
+  --color-ink: #2a231c;
+  --color-ink-muted: #65594c;
+  --color-ink-subtle: #827566;
 
-  /* Accent — warm olive */
-  --color-accent: #6a7350;
-  --color-accent-hover: #575f41;
-  --color-accent-soft: rgba(106, 115, 80, 0.14);
-  --color-accent-border: rgba(106, 115, 80, 0.24);
+  /* Accent — soft tea-olive (friendlier, less clinical) */
+  --color-accent: #75805e;
+  --color-accent-hover: #616a4d;
+  --color-accent-soft: rgba(117, 128, 94, 0.16);
+  --color-accent-border: rgba(117, 128, 94, 0.28);
 
-  /* Chrome — soft warm glass */
-  --color-chrome: #f4eee5;
-  --color-chrome-soft: rgba(250, 246, 240, 0.86);
-  --color-chrome-text: #221e18;
-  --color-chrome-muted: #6e6558;
-  --color-chrome-border: rgba(34, 30, 24, 0.09);
+  /* Chrome — cream glass */
+  --color-chrome: #f6ebe0;
+  --color-chrome-soft: rgba(251, 245, 237, 0.88);
+  --color-chrome-text: #2a231c;
+  --color-chrome-muted: #726656;
+  --color-chrome-border: rgba(42, 35, 28, 0.09);
 
-  /* Borders & shadows */
-  --color-border: rgba(34, 30, 24, 0.09);
-  --color-border-strong: rgba(34, 30, 24, 0.15);
-  --shadow-sm: 0 1px 2px rgba(55, 42, 28, 0.05);
-  --shadow-md: 0 8px 24px rgba(55, 42, 28, 0.07);
-  --shadow-focus: 0 0 0 3px rgba(106, 115, 80, 0.35);
+  /* Borders & shadows — soft warm */
+  --color-border: rgba(42, 35, 28, 0.09);
+  --color-border-strong: rgba(42, 35, 28, 0.15);
+  --shadow-sm: 0 1px 3px rgba(72, 48, 28, 0.05);
+  --shadow-md: 0 10px 28px rgba(72, 48, 28, 0.08);
+  --shadow-focus: 0 0 0 3px rgba(117, 128, 94, 0.32);
 
-  /* Hero / overlays — warm brown scrim */
+  /* Hero — left-weighted wash that still covers a wider reading column */
   --color-scrim: linear-gradient(
-    105deg,
-    rgba(42, 32, 22, 0.58) 0%,
-    rgba(42, 32, 22, 0.36) 48%,
-    rgba(42, 32, 22, 0.2) 100%
+    100deg,
+    rgba(48, 34, 22, 0.7) 0%,
+    rgba(48, 34, 22, 0.5) 45%,
+    rgba(48, 34, 22, 0.22) 72%,
+    rgba(48, 34, 22, 0.08) 100%
   );
 
   /* Typography */
@@ -60,11 +61,11 @@
   --text-hero: clamp(2.75rem, 6vw, 4.25rem);
 
   --leading-tight: 1.15;
-  --leading-snug: 1.35;
-  --leading-body: 1.75;
+  --leading-snug: 1.4;
+  --leading-body: 1.8;
 
   --tracking-tight: -0.02em;
-  --tracking-wide: 0.14em;
+  --tracking-wide: 0.1em;
 
   /* Spacing */
   --space-1: 4px;
@@ -79,11 +80,11 @@
   --space-section-y: clamp(64px, 10vw, 104px);
   --space-section-x: clamp(20px, 5vw, 40px);
 
-  /* Layout */
+  /* Layout — slightly softer corners */
   --max-width: 1120px;
-  --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 20px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
   --radius-pill: 999px;
 
   /* Motion */
