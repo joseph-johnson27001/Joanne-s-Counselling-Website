@@ -51,13 +51,13 @@ export default {
           org: "PTUK",
           role: "Play Therapy UK",
           linkLabel: "Ethical Framework",
-          href: "https://playtherapy.org.uk/wp-content/uploads/2025/08/PTUK-Ethical-Framework.pdf",
+          href: "https://playtherapy.org.uk/ethical-framework/",
         },
         {
           org: "ISCA",
           role: "International School Counsellor Association",
           linkLabel: "ASCA Ethical Standards",
-          href: "https://drive.google.com/file/d/1PnoG0H1E7hb4leTSO0QpEF3wYPFY6gTM/view",
+          href: "https://www.schoolcounselor.org/getmedia/44f30280-ffe8-4b41-9ad8-f15909c3d164/EthicalStandards.pdf",
         },
       ],
     };
