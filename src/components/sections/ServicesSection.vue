@@ -95,7 +95,7 @@ export default {
         {
           title: "Daily Functioning",
           description:
-            "Addressing sleep issues and related behavioral challenges.",
+            "Addressing sleep issues and related behavioural challenges.",
         },
       ],
     };

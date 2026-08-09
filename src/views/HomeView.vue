@@ -35,6 +35,7 @@ export default {
     ContactSection,
   },
   mounted() {
+    window.scrollTo(0, 0);
     this.setupReveal();
   },
   beforeUnmount() {

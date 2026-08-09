@@ -22,7 +22,7 @@
             support children, adolescents, and adults in my private practice. I
             am an Individual Member of the British Association for Counselling
             and Psychotherapy (BACP) and a member of the International School
-            Counselor Association (ISCA) and Play Therapy UK (PTUK).
+            Counsellor Association (ISCA) and Play Therapy UK (PTUK).
           </p>
           <p>
             Over the years, I've come to deeply appreciate the diversity and
