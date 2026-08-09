@@ -2,7 +2,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-meta">
-        <p class="footer-meta-heading">Memberships &amp; ethics</p>
+        <p class="footer-meta-heading">Memberships &amp; ethical standards</p>
         <ul class="membership-list">
           <li v-for="item in memberships" :key="item.org">
             <span class="membership-org">{{ item.org }}</span>

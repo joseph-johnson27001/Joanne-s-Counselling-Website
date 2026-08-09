@@ -12,7 +12,7 @@
           <p>
             Hi, I'm Joanne. My roots are in the Philippines, and since moving to
             Bangkok in 2017, it has become my home. My journey into counselling
-            began through volunteer work as Psychological First-Aid (PFA) and
+            began through volunteer work as a Psychological First-Aid (PFA) and
             Mental Health &amp; Psychosocial Support (MHPSS) provider and has
             since been shaped by experience in education, school counselling, as
             well as my own journey of adapting to a new country.
