@@ -157,19 +157,16 @@ export default {
 
 .membership-link {
   margin-top: 0.15rem;
-  color: var(--color-chrome-muted);
+  color: var(--color-accent);
   text-decoration: none;
   font-size: 0.8rem;
   font-weight: 500;
-  border-bottom: 1px solid transparent;
-  transition:
-    color var(--duration-fast) var(--ease-out),
-    border-color var(--duration-fast) var(--ease-out);
+  border-bottom: none;
+  transition: color var(--duration-fast) var(--ease-out);
 }
 
 .membership-link:hover {
-  color: var(--color-accent);
-  border-bottom-color: var(--color-accent);
+  color: var(--color-accent-hover);
 }
 
 .membership-link:focus-visible {
