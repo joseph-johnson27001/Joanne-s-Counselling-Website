@@ -4,9 +4,7 @@
       <div class="section-heading">
         <p class="eyebrow">About</p>
         <h2>Joanne Barnuevo</h2>
-        <p class="subtitle credentials">
-          MSc Counselling Psychology · BACP · ISCA · PTUK
-        </p>
+        <p class="credentials">MSc Counselling Psychology</p>
       </div>
 
       <div class="about-grid">
@@ -59,10 +57,18 @@ export default {
   background: var(--color-band-sage);
 }
 
+.about-block :deep(h2) {
+  margin-bottom: var(--space-2);
+}
+
 .credentials {
+  margin: 0;
+  font-family: var(--font-body);
   font-size: var(--text-sm);
-  letter-spacing: 0.02em;
+  font-weight: 400;
+  letter-spacing: 0.01em;
   color: var(--color-ink-subtle);
+  line-height: 1.4;
 }
 
 .about-grid {
