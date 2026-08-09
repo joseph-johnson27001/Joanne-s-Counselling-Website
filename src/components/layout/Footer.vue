@@ -7,9 +7,12 @@
           <li v-for="item in memberships" :key="item.org">
             <span class="membership-org">{{ item.org }}</span>
             <span class="membership-role">{{ item.role }}</span>
+            <span v-if="item.detail" class="membership-detail">{{
+              item.detail
+            }}</span>
             <a
               :href="item.href"
-              class="membership-link"
+              class="brand-link membership-link"
               target="_blank"
               rel="noopener noreferrer"
               >{{ item.linkLabel }}</a
@@ -39,7 +42,8 @@ export default {
       memberships: [
         {
           org: "BACP",
-          role: "Individual Member",
+          role: "British Association for Counselling and Psychotherapy",
+          detail: "Individual Member",
           linkLabel: "Ethical Framework",
           href: "https://www.bacp.co.uk/events-and-resources/ethics-and-standards/ethical-framework-for-the-counselling-professions/",
         },
@@ -150,6 +154,12 @@ export default {
 }
 
 .membership-role {
+  font-size: 0.8rem;
+  color: var(--color-chrome-muted);
+  line-height: 1.4;
+}
+
+.membership-detail {
   font-size: 0.8rem;
   color: var(--color-chrome-muted);
   line-height: 1.4;
